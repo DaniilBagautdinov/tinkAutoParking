@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3D00F4827D27F4A00F31B5D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3D00F4727D27F4A00F31B5D /* GoogleService-Info.plist */; };
 		A5C1A4C727D2799A00866EB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1A4C627D2799A00866EB7 /* AppDelegate.swift */; };
 		A5C1A4C927D2799A00866EB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1A4C827D2799A00866EB7 /* SceneDelegate.swift */; };
 		A5C1A4CB27D2799A00866EB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1A4CA27D2799A00866EB7 /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A3D00F4727D27F4A00F31B5D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A5C1A4C327D2799A00866EB7 /* TinkAutoParking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinkAutoParking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C1A4C627D2799A00866EB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5C1A4C827D2799A00866EB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				A5C1A4D427D2799A00866EB7 /* LaunchScreen.storyboard */,
 				A5C1A4D727D2799A00866EB7 /* Info.plist */,
 				A5C1A4CF27D2799A00866EB7 /* TinkAutoParking.xcdatamodeld */,
+				A3D00F4727D27F4A00F31B5D /* GoogleService-Info.plist */,
 			);
 			path = TinkAutoParking;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5C1A4D627D2799A00866EB7 /* LaunchScreen.storyboard in Resources */,
+				A3D00F4827D27F4A00F31B5D /* GoogleService-Info.plist in Resources */,
 				A5C1A4D327D2799A00866EB7 /* Assets.xcassets in Resources */,
 				A5C1A4CE27D2799A00866EB7 /* Main.storyboard in Resources */,
 			);
@@ -445,6 +449,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TinkAutoParking/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "TinkAutoParcking ";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -472,6 +477,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TinkAutoParking/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "TinkAutoParcking ";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
