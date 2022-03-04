@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		A3D00F4827D27F4A00F31B5D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3D00F4727D27F4A00F31B5D /* GoogleService-Info.plist */; };
+		A3D00F4B27D2819500F31B5D /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = A3D00F4A27D2819500F31B5D /* FirebaseAnalytics */; };
+		A3D00F4D27D2819500F31B5D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A3D00F4C27D2819500F31B5D /* FirebaseAuth */; };
+		A3D00F4F27D2819500F31B5D /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = A3D00F4E27D2819500F31B5D /* FirebaseAuthCombine-Community */; };
+		A3D00F5127D2819500F31B5D /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = A3D00F5027D2819500F31B5D /* FirebaseDatabase */; };
 		A5C1A4C727D2799A00866EB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1A4C627D2799A00866EB7 /* AppDelegate.swift */; };
 		A5C1A4C927D2799A00866EB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1A4C827D2799A00866EB7 /* SceneDelegate.swift */; };
 		A5C1A4CB27D2799A00866EB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1A4CA27D2799A00866EB7 /* ViewController.swift */; };
@@ -60,6 +64,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3D00F4B27D2819500F31B5D /* FirebaseAnalytics in Frameworks */,
+				A3D00F4F27D2819500F31B5D /* FirebaseAuthCombine-Community in Frameworks */,
+				A3D00F5127D2819500F31B5D /* FirebaseDatabase in Frameworks */,
+				A3D00F4D27D2819500F31B5D /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +157,12 @@
 			dependencies = (
 			);
 			name = TinkAutoParking;
+			packageProductDependencies = (
+				A3D00F4A27D2819500F31B5D /* FirebaseAnalytics */,
+				A3D00F4C27D2819500F31B5D /* FirebaseAuth */,
+				A3D00F4E27D2819500F31B5D /* FirebaseAuthCombine-Community */,
+				A3D00F5027D2819500F31B5D /* FirebaseDatabase */,
+			);
 			productName = TinkAutoParking;
 			productReference = A5C1A4C327D2799A00866EB7 /* TinkAutoParking.app */;
 			productType = "com.apple.product-type.application";
@@ -221,6 +235,9 @@
 				Base,
 			);
 			mainGroup = A5C1A4BA27D2799A00866EB7;
+			packageReferences = (
+				A3D00F4927D2819500F31B5D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = A5C1A4C427D2799A00866EB7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -608,6 +625,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A3D00F4927D2819500F31B5D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A3D00F4A27D2819500F31B5D /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A3D00F4927D2819500F31B5D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		A3D00F4C27D2819500F31B5D /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A3D00F4927D2819500F31B5D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		A3D00F4E27D2819500F31B5D /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A3D00F4927D2819500F31B5D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		A3D00F5027D2819500F31B5D /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A3D00F4927D2819500F31B5D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		A5C1A4CF27D2799A00866EB7 /* TinkAutoParking.xcdatamodeld */ = {
