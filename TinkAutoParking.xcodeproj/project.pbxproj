@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A36F424127D515950001F773 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = A36F424027D515950001F773 /* GoogleSignIn */; };
 		A3D00F4827D27F4A00F31B5D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3D00F4727D27F4A00F31B5D /* GoogleService-Info.plist */; };
 		A3D00F4B27D2819500F31B5D /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = A3D00F4A27D2819500F31B5D /* FirebaseAnalytics */; };
 		A3D00F4D27D2819500F31B5D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A3D00F4C27D2819500F31B5D /* FirebaseAuth */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A36F423E27D50E610001F773 /* TinkAutoParking.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TinkAutoParking.entitlements; sourceTree = "<group>"; };
 		A3D00F4727D27F4A00F31B5D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A5C1A4C327D2799A00866EB7 /* TinkAutoParking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinkAutoParking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C1A4C627D2799A00866EB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A36F424127D515950001F773 /* GoogleSignIn in Frameworks */,
 				A3D00F4B27D2819500F31B5D /* FirebaseAnalytics in Frameworks */,
 				A3D00F4F27D2819500F31B5D /* FirebaseAuthCombine-Community in Frameworks */,
 				A3D00F5127D2819500F31B5D /* FirebaseDatabase in Frameworks */,
@@ -111,6 +114,7 @@
 		A5C1A4C527D2799A00866EB7 /* TinkAutoParking */ = {
 			isa = PBXGroup;
 			children = (
+				A36F423E27D50E610001F773 /* TinkAutoParking.entitlements */,
 				A5C1A4C627D2799A00866EB7 /* AppDelegate.swift */,
 				A5C1A4C827D2799A00866EB7 /* SceneDelegate.swift */,
 				A5C1A4CA27D2799A00866EB7 /* ViewController.swift */,
@@ -162,6 +166,7 @@
 				A3D00F4C27D2819500F31B5D /* FirebaseAuth */,
 				A3D00F4E27D2819500F31B5D /* FirebaseAuthCombine-Community */,
 				A3D00F5027D2819500F31B5D /* FirebaseDatabase */,
+				A36F424027D515950001F773 /* GoogleSignIn */,
 			);
 			productName = TinkAutoParking;
 			productReference = A5C1A4C327D2799A00866EB7 /* TinkAutoParking.app */;
@@ -237,6 +242,7 @@
 			mainGroup = A5C1A4BA27D2799A00866EB7;
 			packageReferences = (
 				A3D00F4927D2819500F31B5D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				A36F423F27D515950001F773 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			productRefGroup = A5C1A4C427D2799A00866EB7 /* Products */;
 			projectDirPath = "";
@@ -462,8 +468,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TinkAutoParking/TinkAutoParking.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TinkAutoParking/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "TinkAutoParcking ";
@@ -490,8 +498,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TinkAutoParking/TinkAutoParking.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TinkAutoParking/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "TinkAutoParcking ";
@@ -627,6 +637,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		A36F423F27D515950001F773 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
 		A3D00F4927D2819500F31B5D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -638,6 +656,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		A36F424027D515950001F773 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A36F423F27D515950001F773 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
 		A3D00F4A27D2819500F31B5D /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A3D00F4927D2819500F31B5D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
