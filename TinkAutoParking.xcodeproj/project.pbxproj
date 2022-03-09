@@ -13,6 +13,10 @@
 		A3D00F4D27D2819500F31B5D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A3D00F4C27D2819500F31B5D /* FirebaseAuth */; };
 		A3D00F4F27D2819500F31B5D /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = A3D00F4E27D2819500F31B5D /* FirebaseAuthCombine-Community */; };
 		A3D00F5127D2819500F31B5D /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = A3D00F5027D2819500F31B5D /* FirebaseDatabase */; };
+		A5B0C0DD27D8EEC800D35401 /* MapScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A5B0C0DC27D8EEC800D35401 /* MapScene.sks */; };
+		A5B0C0DF27D8EEDF00D35401 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = A5B0C0DE27D8EEDF00D35401 /* Actions.sks */; };
+		A5B0C0E127D8EEEC00D35401 /* MapScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B0C0E027D8EEEC00D35401 /* MapScene.swift */; };
+		A5B0C0E327D8EF0100D35401 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B0C0E227D8EF0100D35401 /* MapViewController.swift */; };
 		A5C1A4C727D2799A00866EB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1A4C627D2799A00866EB7 /* AppDelegate.swift */; };
 		A5C1A4C927D2799A00866EB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1A4C827D2799A00866EB7 /* SceneDelegate.swift */; };
 		A5C1A4CB27D2799A00866EB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1A4CA27D2799A00866EB7 /* ViewController.swift */; };
@@ -45,6 +49,10 @@
 /* Begin PBXFileReference section */
 		A36F423E27D50E610001F773 /* TinkAutoParking.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TinkAutoParking.entitlements; sourceTree = "<group>"; };
 		A3D00F4727D27F4A00F31B5D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A5B0C0DC27D8EEC800D35401 /* MapScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = MapScene.sks; path = ../../tinkAutoParking/TinkAutoParking/MapScene.sks; sourceTree = "<group>"; };
+		A5B0C0DE27D8EEDF00D35401 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Actions.sks; path = ../../tinkAutoParking/TinkAutoParking/Actions.sks; sourceTree = "<group>"; };
+		A5B0C0E027D8EEEC00D35401 /* MapScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapScene.swift; path = ../../tinkAutoParking/TinkAutoParking/MapScene.swift; sourceTree = "<group>"; };
+		A5B0C0E227D8EF0100D35401 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = ../../tinkAutoParking/TinkAutoParking/MapViewController.swift; sourceTree = "<group>"; };
 		A5C1A4C327D2799A00866EB7 /* TinkAutoParking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinkAutoParking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C1A4C627D2799A00866EB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5C1A4C827D2799A00866EB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +132,10 @@
 				A5C1A4D727D2799A00866EB7 /* Info.plist */,
 				A5C1A4CF27D2799A00866EB7 /* TinkAutoParking.xcdatamodeld */,
 				A3D00F4727D27F4A00F31B5D /* GoogleService-Info.plist */,
+				A5B0C0DC27D8EEC800D35401 /* MapScene.sks */,
+				A5B0C0DE27D8EEDF00D35401 /* Actions.sks */,
+				A5B0C0E027D8EEEC00D35401 /* MapScene.swift */,
+				A5B0C0E227D8EF0100D35401 /* MapViewController.swift */,
 			);
 			path = TinkAutoParking;
 			sourceTree = "<group>";
@@ -261,9 +273,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5C1A4D627D2799A00866EB7 /* LaunchScreen.storyboard in Resources */,
+				A5B0C0DF27D8EEDF00D35401 /* Actions.sks in Resources */,
 				A3D00F4827D27F4A00F31B5D /* GoogleService-Info.plist in Resources */,
 				A5C1A4D327D2799A00866EB7 /* Assets.xcassets in Resources */,
 				A5C1A4CE27D2799A00866EB7 /* Main.storyboard in Resources */,
+				A5B0C0DD27D8EEC800D35401 /* MapScene.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +302,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5B0C0E127D8EEEC00D35401 /* MapScene.swift in Sources */,
+				A5B0C0E327D8EF0100D35401 /* MapViewController.swift in Sources */,
 				A5C1A4CB27D2799A00866EB7 /* ViewController.swift in Sources */,
 				A5C1A4C727D2799A00866EB7 /* AppDelegate.swift in Sources */,
 				A5C1A4C927D2799A00866EB7 /* SceneDelegate.swift in Sources */,
@@ -478,6 +494,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -508,6 +525,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
