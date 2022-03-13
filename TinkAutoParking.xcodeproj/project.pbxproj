@@ -13,10 +13,11 @@
 		A3D00F4D27D2819500F31B5D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A3D00F4C27D2819500F31B5D /* FirebaseAuth */; };
 		A3D00F4F27D2819500F31B5D /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = A3D00F4E27D2819500F31B5D /* FirebaseAuthCombine-Community */; };
 		A3D00F5127D2819500F31B5D /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = A3D00F5027D2819500F31B5D /* FirebaseDatabase */; };
+		A561FCAE27DE244800E53D83 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A561FCAD27DE244800E53D83 /* MapViewController.swift */; };
+		A592DF9D27DE1E4B0016B84D /* TileSet.sks in Resources */ = {isa = PBXBuildFile; fileRef = A592DF9C27DE1E4B0016B84D /* TileSet.sks */; };
 		A5B0C0DD27D8EEC800D35401 /* MapScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A5B0C0DC27D8EEC800D35401 /* MapScene.sks */; };
 		A5B0C0DF27D8EEDF00D35401 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = A5B0C0DE27D8EEDF00D35401 /* Actions.sks */; };
 		A5B0C0E127D8EEEC00D35401 /* MapScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B0C0E027D8EEEC00D35401 /* MapScene.swift */; };
-		A5B0C0E327D8EF0100D35401 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B0C0E227D8EF0100D35401 /* MapViewController.swift */; };
 		A5C1A4C727D2799A00866EB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1A4C627D2799A00866EB7 /* AppDelegate.swift */; };
 		A5C1A4C927D2799A00866EB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1A4C827D2799A00866EB7 /* SceneDelegate.swift */; };
 		A5C1A4CB27D2799A00866EB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1A4CA27D2799A00866EB7 /* ViewController.swift */; };
@@ -49,10 +50,11 @@
 /* Begin PBXFileReference section */
 		A36F423E27D50E610001F773 /* TinkAutoParking.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TinkAutoParking.entitlements; sourceTree = "<group>"; };
 		A3D00F4727D27F4A00F31B5D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		A5B0C0DC27D8EEC800D35401 /* MapScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = MapScene.sks; path = ../../tinkAutoParking/TinkAutoParking/MapScene.sks; sourceTree = "<group>"; };
+		A561FCAD27DE244800E53D83 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		A592DF9C27DE1E4B0016B84D /* TileSet.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TileSet.sks; sourceTree = "<group>"; };
+		A5B0C0DC27D8EEC800D35401 /* MapScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MapScene.sks; sourceTree = "<group>"; };
 		A5B0C0DE27D8EEDF00D35401 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Actions.sks; path = ../../tinkAutoParking/TinkAutoParking/Actions.sks; sourceTree = "<group>"; };
 		A5B0C0E027D8EEEC00D35401 /* MapScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapScene.swift; path = ../../tinkAutoParking/TinkAutoParking/MapScene.swift; sourceTree = "<group>"; };
-		A5B0C0E227D8EF0100D35401 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = ../../tinkAutoParking/TinkAutoParking/MapViewController.swift; sourceTree = "<group>"; };
 		A5C1A4C327D2799A00866EB7 /* TinkAutoParking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinkAutoParking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C1A4C627D2799A00866EB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5C1A4C827D2799A00866EB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,7 +137,8 @@
 				A5B0C0DC27D8EEC800D35401 /* MapScene.sks */,
 				A5B0C0DE27D8EEDF00D35401 /* Actions.sks */,
 				A5B0C0E027D8EEEC00D35401 /* MapScene.swift */,
-				A5B0C0E227D8EF0100D35401 /* MapViewController.swift */,
+				A592DF9C27DE1E4B0016B84D /* TileSet.sks */,
+				A561FCAD27DE244800E53D83 /* MapViewController.swift */,
 			);
 			path = TinkAutoParking;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				A5B0C0DF27D8EEDF00D35401 /* Actions.sks in Resources */,
 				A3D00F4827D27F4A00F31B5D /* GoogleService-Info.plist in Resources */,
 				A5C1A4D327D2799A00866EB7 /* Assets.xcassets in Resources */,
+				A592DF9D27DE1E4B0016B84D /* TileSet.sks in Resources */,
 				A5C1A4CE27D2799A00866EB7 /* Main.storyboard in Resources */,
 				A5B0C0DD27D8EEC800D35401 /* MapScene.sks in Resources */,
 			);
@@ -303,7 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5B0C0E127D8EEEC00D35401 /* MapScene.swift in Sources */,
-				A5B0C0E327D8EF0100D35401 /* MapViewController.swift in Sources */,
+				A561FCAE27DE244800E53D83 /* MapViewController.swift in Sources */,
 				A5C1A4CB27D2799A00866EB7 /* ViewController.swift in Sources */,
 				A5C1A4C727D2799A00866EB7 /* AppDelegate.swift in Sources */,
 				A5C1A4C927D2799A00866EB7 /* SceneDelegate.swift in Sources */,
@@ -487,7 +491,7 @@
 				CODE_SIGN_ENTITLEMENTS = TinkAutoParking/TinkAutoParking.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = NF5V6HM2Z5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TinkAutoParking/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "TinkAutoParcking ";
@@ -518,7 +522,7 @@
 				CODE_SIGN_ENTITLEMENTS = TinkAutoParking/TinkAutoParking.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = NF5V6HM2Z5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TinkAutoParking/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "TinkAutoParcking ";
