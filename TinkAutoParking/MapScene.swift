@@ -21,6 +21,9 @@ class MapScene: SKScene {
         let panGesture = UIPanGestureRecognizer()
         panGesture.addTarget(self, action: #selector(panGestureAction(_:)))
         view.addGestureRecognizer(panGesture)
+        let pinchGesture = UIPinchGestureRecognizer()
+        pinchGesture.addTarget(self, action: #selector(pinchGestureAction(_:)))
+        view.addGestureRecognizer(pinchGesture)
         
     }
     
@@ -40,12 +43,6 @@ class MapScene: SKScene {
             y: previousCameraPoint.y + translation.y
         )
         camera.position = newPosition
-    }
-    
-    override func sceneDidLoad() {
-        let pinchGesture = UIPinchGestureRecognizer()
-        pinchGesture.addTarget(self, action: #selector(pinchGestureAction(_:)))
-        view?.addGestureRecognizer(pinchGesture)
     }
     
     @objc func pinchGestureAction(_ sender: UIPinchGestureRecognizer) {
