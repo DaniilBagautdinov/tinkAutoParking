@@ -14,6 +14,7 @@ class MapScene: SKScene {
     
     var previousCameraPoint = CGPoint.zero
     var previousCameraScale = CGFloat()
+    var movementSpeed = CGFloat(1)
     
     
     override func didMove(to view: SKView) {
@@ -39,8 +40,8 @@ class MapScene: SKScene {
         // Perform the translation
         let translation = sender.translation(in: self.view)
         let newPosition = CGPoint(
-            x: previousCameraPoint.x + translation.x * -1,
-            y: previousCameraPoint.y + translation.y
+            x: previousCameraPoint.x + translation.x * -movementSpeed * 1.7,
+            y: previousCameraPoint.y + translation.y * movementSpeed * 1.7
         )
         camera.position = newPosition
     }
@@ -49,6 +50,7 @@ class MapScene: SKScene {
         guard let camera = self.camera else {
             return
         }
+        movementSpeed = camera.xScale
         if sender.state == .began {
             previousCameraScale = camera.xScale
         }
