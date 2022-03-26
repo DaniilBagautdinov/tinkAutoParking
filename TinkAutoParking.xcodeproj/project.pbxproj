@@ -13,6 +13,9 @@
 		A3D00F4D27D2819500F31B5D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A3D00F4C27D2819500F31B5D /* FirebaseAuth */; };
 		A3D00F4F27D2819500F31B5D /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = A3D00F4E27D2819500F31B5D /* FirebaseAuthCombine-Community */; };
 		A3D00F5127D2819500F31B5D /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = A3D00F5027D2819500F31B5D /* FirebaseDatabase */; };
+		A3FD2E9127EF21A9002FD5A1 /* UserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD2E9027EF21A9002FD5A1 /* UserInteractor.swift */; };
+		A3FD2E9427EF21C4002FD5A1 /* UserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD2E9327EF21C4002FD5A1 /* UserPresenter.swift */; };
+		A3FD2E9627EF21FA002FD5A1 /* AuthAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD2E9527EF21FA002FD5A1 /* AuthAssembly.swift */; };
 		A561FCAE27DE244800E53D83 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A561FCAD27DE244800E53D83 /* MapViewController.swift */; };
 		A592DF9D27DE1E4B0016B84D /* TileSet.sks in Resources */ = {isa = PBXBuildFile; fileRef = A592DF9C27DE1E4B0016B84D /* TileSet.sks */; };
 		A5B0C0DD27D8EEC800D35401 /* MapScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A5B0C0DC27D8EEC800D35401 /* MapScene.sks */; };
@@ -20,7 +23,7 @@
 		A5B0C0E127D8EEEC00D35401 /* MapScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B0C0E027D8EEEC00D35401 /* MapScene.swift */; };
 		A5C1A4C727D2799A00866EB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1A4C627D2799A00866EB7 /* AppDelegate.swift */; };
 		A5C1A4C927D2799A00866EB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1A4C827D2799A00866EB7 /* SceneDelegate.swift */; };
-		A5C1A4CB27D2799A00866EB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1A4CA27D2799A00866EB7 /* ViewController.swift */; };
+		A5C1A4CB27D2799A00866EB7 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1A4CA27D2799A00866EB7 /* AuthViewController.swift */; };
 		A5C1A4CE27D2799A00866EB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C1A4CC27D2799A00866EB7 /* Main.storyboard */; };
 		A5C1A4D127D2799A00866EB7 /* TinkAutoParking.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A5C1A4CF27D2799A00866EB7 /* TinkAutoParking.xcdatamodeld */; };
 		A5C1A4D327D2799A00866EB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5C1A4D227D2799A00866EB7 /* Assets.xcassets */; };
@@ -53,6 +56,9 @@
 /* Begin PBXFileReference section */
 		A36F423E27D50E610001F773 /* TinkAutoParking.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TinkAutoParking.entitlements; sourceTree = "<group>"; };
 		A3D00F4727D27F4A00F31B5D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A3FD2E9027EF21A9002FD5A1 /* UserInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInteractor.swift; sourceTree = "<group>"; };
+		A3FD2E9327EF21C4002FD5A1 /* UserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPresenter.swift; sourceTree = "<group>"; };
+		A3FD2E9527EF21FA002FD5A1 /* AuthAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAssembly.swift; sourceTree = "<group>"; };
 		A561FCAD27DE244800E53D83 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A592DF9C27DE1E4B0016B84D /* TileSet.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TileSet.sks; sourceTree = "<group>"; };
 		A5B0C0DC27D8EEC800D35401 /* MapScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MapScene.sks; sourceTree = "<group>"; };
@@ -61,7 +67,7 @@
 		A5C1A4C327D2799A00866EB7 /* TinkAutoParking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinkAutoParking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C1A4C627D2799A00866EB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5C1A4C827D2799A00866EB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A5C1A4CA27D2799A00866EB7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A5C1A4CA27D2799A00866EB7 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		A5C1A4CD27D2799A00866EB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5C1A4D027D2799A00866EB7 /* TinkAutoParking.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TinkAutoParking.xcdatamodel; sourceTree = "<group>"; };
 		A5C1A4D227D2799A00866EB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -107,6 +113,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A3FD2E8C27EF212F002FD5A1 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				A3FD2E8D27EF213D002FD5A1 /* Interactor */,
+				A3FD2E8E27EF2149002FD5A1 /* View */,
+				A3FD2E8F27EF2151002FD5A1 /* Presenter */,
+				A3FD2E9527EF21FA002FD5A1 /* AuthAssembly.swift */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		A3FD2E8D27EF213D002FD5A1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A3FD2E9027EF21A9002FD5A1 /* UserInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A3FD2E8E27EF2149002FD5A1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A5C1A4CA27D2799A00866EB7 /* AuthViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A3FD2E8F27EF2151002FD5A1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A3FD2E9327EF21C4002FD5A1 /* UserPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		A5C1A4BA27D2799A00866EB7 = {
 			isa = PBXGroup;
 			children = (
@@ -130,11 +171,11 @@
 		A5C1A4C527D2799A00866EB7 /* TinkAutoParking */ = {
 			isa = PBXGroup;
 			children = (
+				A3FD2E8C27EF212F002FD5A1 /* Authorization */,
 				A5CCBD1027EE1BFF002B33D8 /* Map */,
 				A36F423E27D50E610001F773 /* TinkAutoParking.entitlements */,
 				A5C1A4C627D2799A00866EB7 /* AppDelegate.swift */,
 				A5C1A4C827D2799A00866EB7 /* SceneDelegate.swift */,
-				A5C1A4CA27D2799A00866EB7 /* ViewController.swift */,
 				A5C1A4CC27D2799A00866EB7 /* Main.storyboard */,
 				A5CCBD1A27EE1C5A002B33D8 /* Resources */,
 			);
@@ -364,14 +405,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5CCBD1927EE1C4A002B33D8 /* MapAssembly.swift in Sources */,
+				A3FD2E9127EF21A9002FD5A1 /* UserInteractor.swift in Sources */,
 				A5B0C0E127D8EEEC00D35401 /* MapScene.swift in Sources */,
+				A3FD2E9627EF21FA002FD5A1 /* AuthAssembly.swift in Sources */,
 				A561FCAE27DE244800E53D83 /* MapViewController.swift in Sources */,
-				A5C1A4CB27D2799A00866EB7 /* ViewController.swift in Sources */,
+				A5C1A4CB27D2799A00866EB7 /* AuthViewController.swift in Sources */,
 				A5CCBD1727EE1C41002B33D8 /* MapPresenter.swift in Sources */,
 				A5C1A4C727D2799A00866EB7 /* AppDelegate.swift in Sources */,
 				A5CCBD1527EE1C38002B33D8 /* MapModel.swift in Sources */,
 				A5C1A4C927D2799A00866EB7 /* SceneDelegate.swift in Sources */,
 				A5C1A4D127D2799A00866EB7 /* TinkAutoParking.xcdatamodeld in Sources */,
+				A3FD2E9427EF21C4002FD5A1 /* UserPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
