@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+protocol UserInteractorServiceProtocol {
+     
+}
+
+final class UserInteractor: UserInteractorServiceProtocol {
+    
+}
