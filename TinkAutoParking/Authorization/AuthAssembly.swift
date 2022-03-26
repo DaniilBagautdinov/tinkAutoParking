@@ -6,3 +6,21 @@
 //
 
 import Foundation
+import UIKit
+
+protocol AuthAssemblyProtocol: AnyObject {
+    func assemble() -> UIViewController
+}
+
+final class AuthAssembly: AuthAssemblyProtocol {
+    
+    func assemble() -> UIViewController {
+        let interactor = UserInteractor()
+        let presenter = UserPresenter(interactor: interactor)
+        let viewController = AuthViewController(presenter: presenter)
+        
+        presenter.view = viewController
+        
+        return viewController
+    }
+}

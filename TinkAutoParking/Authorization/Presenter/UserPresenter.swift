@@ -6,3 +6,22 @@
 //
 
 import Foundation
+
+protocol UserPresenterProtocol {
+    
+}
+
+final class UserPresenter {
+    
+    let interactor: UserInteractorServiceProtocol
+    weak var view: AuthViewControllerProtocol?
+    
+    init (interactor: UserInteractorServiceProtocol) {
+    self.interactor = interactor
+    }
+    
+}
+
+extension UserPresenter: UserPresenterProtocol {
+    
+}
