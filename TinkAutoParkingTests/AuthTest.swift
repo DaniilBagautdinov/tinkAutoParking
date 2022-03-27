@@ -1,14 +1,14 @@
 //
-//  TinkAutoParkingTests.swift
+//  AuthTest.swift
 //  TinkAutoParkingTests
 //
-//  Created by Даниил Багаутдинов on 04.03.2022.
+//  Created by Даниил Багаутдинов on 27.03.2022.
 //
 
 import XCTest
 @testable import TinkAutoParking
 
-class TinkAutoParkingTests: XCTestCase {
+class AuthTest: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

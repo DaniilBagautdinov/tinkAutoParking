@@ -16,6 +16,7 @@
 		A3FD2E9127EF21A9002FD5A1 /* UserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD2E9027EF21A9002FD5A1 /* UserInteractor.swift */; };
 		A3FD2E9427EF21C4002FD5A1 /* UserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD2E9327EF21C4002FD5A1 /* UserPresenter.swift */; };
 		A3FD2E9627EF21FA002FD5A1 /* AuthAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD2E9527EF21FA002FD5A1 /* AuthAssembly.swift */; };
+		A516A9A027F089E3006BD170 /* AuthTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A516A99F27F089E3006BD170 /* AuthTest.swift */; };
 		A561FCAE27DE244800E53D83 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A561FCAD27DE244800E53D83 /* MapViewController.swift */; };
 		A592DF9D27DE1E4B0016B84D /* TileSet.sks in Resources */ = {isa = PBXBuildFile; fileRef = A592DF9C27DE1E4B0016B84D /* TileSet.sks */; };
 		A5B0C0DD27D8EEC800D35401 /* MapScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A5B0C0DC27D8EEC800D35401 /* MapScene.sks */; };
@@ -28,7 +29,7 @@
 		A5C1A4D127D2799A00866EB7 /* TinkAutoParking.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A5C1A4CF27D2799A00866EB7 /* TinkAutoParking.xcdatamodeld */; };
 		A5C1A4D327D2799A00866EB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5C1A4D227D2799A00866EB7 /* Assets.xcassets */; };
 		A5C1A4D627D2799A00866EB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C1A4D427D2799A00866EB7 /* LaunchScreen.storyboard */; };
-		A5C1A4E127D2799B00866EB7 /* TinkAutoParkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1A4E027D2799B00866EB7 /* TinkAutoParkingTests.swift */; };
+		A5C1A4E127D2799B00866EB7 /* MapTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1A4E027D2799B00866EB7 /* MapTest.swift */; };
 		A5C1A4EB27D2799B00866EB7 /* TinkAutoParkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1A4EA27D2799B00866EB7 /* TinkAutoParkingUITests.swift */; };
 		A5C1A4ED27D2799B00866EB7 /* TinkAutoParkingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1A4EC27D2799B00866EB7 /* TinkAutoParkingUITestsLaunchTests.swift */; };
 		A5CCBD1527EE1C38002B33D8 /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CCBD1427EE1C38002B33D8 /* MapModel.swift */; };
@@ -59,6 +60,7 @@
 		A3FD2E9027EF21A9002FD5A1 /* UserInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInteractor.swift; sourceTree = "<group>"; };
 		A3FD2E9327EF21C4002FD5A1 /* UserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPresenter.swift; sourceTree = "<group>"; };
 		A3FD2E9527EF21FA002FD5A1 /* AuthAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAssembly.swift; sourceTree = "<group>"; };
+		A516A99F27F089E3006BD170 /* AuthTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTest.swift; sourceTree = "<group>"; };
 		A561FCAD27DE244800E53D83 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A592DF9C27DE1E4B0016B84D /* TileSet.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TileSet.sks; sourceTree = "<group>"; };
 		A5B0C0DC27D8EEC800D35401 /* MapScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MapScene.sks; sourceTree = "<group>"; };
@@ -74,7 +76,7 @@
 		A5C1A4D527D2799A00866EB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5C1A4D727D2799A00866EB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5C1A4DC27D2799B00866EB7 /* TinkAutoParkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinkAutoParkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A5C1A4E027D2799B00866EB7 /* TinkAutoParkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinkAutoParkingTests.swift; sourceTree = "<group>"; };
+		A5C1A4E027D2799B00866EB7 /* MapTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTest.swift; sourceTree = "<group>"; };
 		A5C1A4E627D2799B00866EB7 /* TinkAutoParkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinkAutoParkingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C1A4EA27D2799B00866EB7 /* TinkAutoParkingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinkAutoParkingUITests.swift; sourceTree = "<group>"; };
 		A5C1A4EC27D2799B00866EB7 /* TinkAutoParkingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinkAutoParkingUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -185,7 +187,8 @@
 		A5C1A4DF27D2799B00866EB7 /* TinkAutoParkingTests */ = {
 			isa = PBXGroup;
 			children = (
-				A5C1A4E027D2799B00866EB7 /* TinkAutoParkingTests.swift */,
+				A516A99F27F089E3006BD170 /* AuthTest.swift */,
+				A5C1A4E027D2799B00866EB7 /* MapTest.swift */,
 			);
 			path = TinkAutoParkingTests;
 			sourceTree = "<group>";
@@ -423,7 +426,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5C1A4E127D2799B00866EB7 /* TinkAutoParkingTests.swift in Sources */,
+				A5C1A4E127D2799B00866EB7 /* MapTest.swift in Sources */,
+				A516A9A027F089E3006BD170 /* AuthTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
