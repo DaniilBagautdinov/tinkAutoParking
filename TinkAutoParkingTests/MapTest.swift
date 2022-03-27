@@ -7,30 +7,74 @@
 
 import XCTest
 @testable import TinkAutoParking
+import SpriteKit
 
 class MapTest: XCTestCase {
+    
+    var mapScene: MapScene!
+    var mapAssembly: MapAssembly!
+    var viewController: MapViewController!
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        try super.setUpWithError()
+        mapScene = MapScene()
+        mapAssembly = MapAssembly()
+        viewController = MapViewController()
+        viewController.viewDidLoad()
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        mapScene = nil
+        mapAssembly = nil
+        viewController = nil
+        try super.tearDownWithError()
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func testXCoordinatesSuccess() throws {
+        let result = mapScene.xСoordinates(previousCameraPointX: 10, translatrionX: 10, movementSpeed: 10)
+        XCTAssertEqual(result, -160)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testXCoordinatesFail() throws {
+        let result = mapScene.xСoordinates(previousCameraPointX: 10, translatrionX: 10, movementSpeed: 10)
+        XCTAssertNotEqual(result, -150)
     }
-
+    
+    func testYCoordinatesSuccess() throws {
+        let result = mapScene.yСoordinates(previousCameraPointY: 10, translatrionY: 10, movementSpeed: 10)
+        XCTAssertEqual(result, 180)
+    }
+    
+    func testYCoordinatesFail() throws {
+        let result = mapScene.yСoordinates(previousCameraPointY: 10, translatrionY: 10, movementSpeed: 10)
+        XCTAssertNotEqual(result, 170)
+    }
+    
+    func testCameraNewScaleCoordinatesSuccess() throws {
+        let result = mapScene.cameraNewScaleCoordinates(previousCameraScale: 10, scale: 10)
+        XCTAssertEqual(result, 1)
+    }
+    
+    func testCameraNewScaleCoordinatesFail() throws {
+        let result = mapScene.cameraNewScaleCoordinates(previousCameraScale: 10, scale: 10)
+        XCTAssertNotEqual(result, 3)
+    }
+    
+    func testAssemblySuccess() throws {
+        let result = mapAssembly.assemble()
+        XCTAssertTrue(result.isKind(of: MapViewController.self))
+    }
+    
+    func testAssemblyFail() throws {
+        let result = mapAssembly.assemble()
+        XCTAssertFalse(result.isKind(of: AuthViewController.self))
+    }
+    
+    func testSKViewSuccess() throws {
+        XCTAssertTrue(viewController.view.isKind(of: SKView.self))
+    }
+    
+    func testSKViewFail() throws {
+        XCTAssertFalse(viewController.view.isKind(of: UIImage.self))
+    }
 }

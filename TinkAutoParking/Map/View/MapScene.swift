@@ -28,6 +28,15 @@ class MapScene: SKScene {
         
     }
     
+    
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+    }
+    
+    
+    override func update(_ currentTime: TimeInterval) {
+    }
     @objc func panGestureAction(_ sender: UIPanGestureRecognizer) {
         // The camera has a weak reference, so test it
         guard let camera = self.camera else {
@@ -40,8 +49,8 @@ class MapScene: SKScene {
         // Perform the translation
         let translation = sender.translation(in: self.view)
         let newPosition = CGPoint(
-            x: previousCameraPoint.x + translation.x * -movementSpeed * 1.7,
-            y: previousCameraPoint.y + translation.y * movementSpeed * 1.7
+            x: xСoordinates(previousCameraPointX: previousCameraPoint.x, translatrionX: translation.x, movementSpeed: movementSpeed),
+            y: yСoordinates(previousCameraPointY: previousCameraPoint.y, translatrionY: translation.y, movementSpeed: movementSpeed)
         )
         camera.position = newPosition
     }
@@ -54,14 +63,18 @@ class MapScene: SKScene {
         if sender.state == .began {
             previousCameraScale = camera.xScale
         }
-        camera.setScale(previousCameraScale * 1 / sender.scale)
+        camera.setScale(cameraNewScaleCoordinates(previousCameraScale: previousCameraScale, scale: sender.scale))
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
+    func xСoordinates (previousCameraPointX: CGFloat, translatrionX: CGFloat, movementSpeed: CGFloat) -> CGFloat {
+        return previousCameraPointX + translatrionX * -movementSpeed * 1.7
     }
     
+    func yСoordinates (previousCameraPointY: CGFloat, translatrionY: CGFloat, movementSpeed: CGFloat) -> CGFloat {
+        return previousCameraPointY + translatrionY * movementSpeed * 1.7
+    }
     
-    override func update(_ currentTime: TimeInterval) {
+    func cameraNewScaleCoordinates (previousCameraScale: CGFloat, scale: CGFloat) -> CGFloat{
+        return previousCameraScale / scale
     }
 }

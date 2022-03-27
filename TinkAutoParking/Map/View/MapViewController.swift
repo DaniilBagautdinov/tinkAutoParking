@@ -24,6 +24,10 @@ class MapViewController: UIViewController {
 //        fatalError("init(coder:) has not been implemented")
 //    }
     
+    override func loadView() {
+        self.view = SKView()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
