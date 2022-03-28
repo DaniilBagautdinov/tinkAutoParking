@@ -7,7 +7,11 @@
 
 import Foundation
 
-struct UserDB: Identifiable {
+protocol UserDBProtocol {
+     
+}
+
+struct UserDB: Identifiable, UserDBProtocol {
     
     var id: String = UUID().uuidString
     var name: String

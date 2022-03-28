@@ -8,16 +8,16 @@
 import Foundation
 
 protocol UserPresenterProtocol {
-    
+
 }
 
 final class UserPresenter {
     
-    let interactor: UserInteractorServiceProtocol
+    let userModel: UserDBProtocol
     weak var view: AuthViewControllerProtocol?
     
-    init (interactor: UserInteractorServiceProtocol) {
-    self.interactor = interactor
+    init (userModel: UserDBProtocol) {
+       self.userModel = userModel
     }
     
 }
