@@ -19,7 +19,6 @@
 		A3D00F4D27D2819500F31B5D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A3D00F4C27D2819500F31B5D /* FirebaseAuth */; };
 		A3D00F4F27D2819500F31B5D /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = A3D00F4E27D2819500F31B5D /* FirebaseAuthCombine-Community */; };
 		A3D00F5127D2819500F31B5D /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = A3D00F5027D2819500F31B5D /* FirebaseDatabase */; };
-		A3FD2E9127EF21A9002FD5A1 /* UserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD2E9027EF21A9002FD5A1 /* UserInteractor.swift */; };
 		A3FD2E9427EF21C4002FD5A1 /* UserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD2E9327EF21C4002FD5A1 /* UserPresenter.swift */; };
 		A3FD2E9627EF21FA002FD5A1 /* AuthAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD2E9527EF21FA002FD5A1 /* AuthAssembly.swift */; };
 		A516A9A027F089E3006BD170 /* AuthTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A516A99F27F089E3006BD170 /* AuthTest.swift */; };
@@ -67,7 +66,6 @@
 		A397EBD827F1AA1A002E6991 /* RegViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegViewController.swift; sourceTree = "<group>"; };
 		A397EBE027F1C4BD002E6991 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../../../Desktop/Main.storyboard; sourceTree = "<group>"; };
 		A3D00F4727D27F4A00F31B5D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		A3FD2E9027EF21A9002FD5A1 /* UserInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInteractor.swift; sourceTree = "<group>"; };
 		A3FD2E9327EF21C4002FD5A1 /* UserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPresenter.swift; sourceTree = "<group>"; };
 		A3FD2E9527EF21FA002FD5A1 /* AuthAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAssembly.swift; sourceTree = "<group>"; };
 		A516A99F27F089E3006BD170 /* AuthTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTest.swift; sourceTree = "<group>"; };
@@ -134,12 +132,12 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		A301D10227F0ACFC003A9397 /* Structs  */ = {
+		A301D10227F0ACFC003A9397 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				A301D10327F0AD10003A9397 /* UserDB.swift */,
 			);
-			path = "Structs ";
+			path = Model;
 			sourceTree = "<group>";
 		};
 		A301D10727F0AF19003A9397 /* Frameworks */ = {
@@ -153,21 +151,12 @@
 			isa = PBXGroup;
 			children = (
 				A301D0FF27F0A8E3003A9397 /* Services */,
-				A301D10227F0ACFC003A9397 /* Structs  */,
-				A3FD2E8D27EF213D002FD5A1 /* Interactor */,
+				A301D10227F0ACFC003A9397 /* Model */,
 				A3FD2E8E27EF2149002FD5A1 /* View */,
 				A3FD2E8F27EF2151002FD5A1 /* Presenter */,
 				A3FD2E9527EF21FA002FD5A1 /* AuthAssembly.swift */,
 			);
 			path = Authorization;
-			sourceTree = "<group>";
-		};
-		A3FD2E8D27EF213D002FD5A1 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				A3FD2E9027EF21A9002FD5A1 /* UserInteractor.swift */,
-			);
-			path = Interactor;
 			sourceTree = "<group>";
 		};
 		A3FD2E8E27EF2149002FD5A1 /* View */ = {
@@ -447,7 +436,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5CCBD1927EE1C4A002B33D8 /* MapAssembly.swift in Sources */,
-				A3FD2E9127EF21A9002FD5A1 /* UserInteractor.swift in Sources */,
 				A5B0C0E127D8EEEC00D35401 /* MapScene.swift in Sources */,
 				A301D10627F0AE7E003A9397 /* DataBaseService.swift in Sources */,
 				A3FD2E9627EF21FA002FD5A1 /* AuthAssembly.swift in Sources */,

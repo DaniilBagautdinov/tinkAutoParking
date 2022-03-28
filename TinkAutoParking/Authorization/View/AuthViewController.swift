@@ -41,9 +41,7 @@ class AuthViewController: UIViewController {
     @IBAction func signInButton(_ sender: Any) {
         AuthService.shared.signIn(email: emailTextField.text ?? "", password: passwordTextField.text ?? "") { result in
             switch result {
-                
             case .success(let user):
-                self.performSegue(withIdentifier: "map", sender: nil)
                 print(user)
             case .failure(let error):
                 print(error)
