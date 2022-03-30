@@ -8,6 +8,10 @@
 import SpriteKit
 import GameplayKit
 
+protocol MapSceneDelegate: AnyObject {
+    func showScreen()
+}
+
 class MapScene: SKScene, UIGestureRecognizerDelegate {
     
     let layer: SKNode!
@@ -16,6 +20,10 @@ class MapScene: SKScene, UIGestureRecognizerDelegate {
     let demoCamera: Camera!
     
     var initialScale: CGFloat = 1.0
+    
+    var sprites: [SKSpriteNode] = []
+    
+    weak var delegatee: MapSceneDelegate?
     
     // MARK: Initializers
     
@@ -79,6 +87,16 @@ class MapScene: SKScene, UIGestureRecognizerDelegate {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         demoCamera.stop()
+        
+        for touch in touches {
+            let location = touch.location(in: self)
+            let node:SKNode = self.atPoint(location)
+            for sprite in sprites {
+                if sprite.position.equalTo(node.position) {
+                    delegatee?.showScreen()
+                }
+            }
+        }
     }
     
     @objc func handlePanGesture(recognizer: UIPanGestureRecognizer) {
@@ -171,6 +189,7 @@ class MapScene: SKScene, UIGestureRecognizerDelegate {
                 let spriteGamePiece = SKSpriteNode(imageNamed: "tile")
                 spriteGamePiece.position = CGPoint(x: (column * 120) - (columns * 60) + 60, y: (row * 120) - (rows * 60) + 60)
                 layer.addChild(spriteGamePiece)
+                sprites.append(spriteGamePiece)
             }
         }
         

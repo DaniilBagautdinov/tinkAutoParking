@@ -33,7 +33,7 @@ class MapViewController: UIViewController {
             // Load the SKScene from 'GameScene.sks'
             demoScene = MapScene(size: view.bounds.size)
             demoScene.scaleMode = .resizeFill
-            
+            demoScene.delegatee = self
             // Present the scene.
             view.presentScene(demoScene)
             
@@ -63,4 +63,10 @@ class MapViewController: UIViewController {
 
 extension MapViewController: MapViewControllerProtocol {
     
+}
+
+extension MapViewController: MapSceneDelegate {
+    func showScreen() {
+        self.performSegue(withIdentifier: "segueVC", sender: nil)
+    }
 }
