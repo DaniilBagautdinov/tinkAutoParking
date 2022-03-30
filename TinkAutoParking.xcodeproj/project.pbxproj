@@ -19,6 +19,7 @@
 		A3D00F4D27D2819500F31B5D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A3D00F4C27D2819500F31B5D /* FirebaseAuth */; };
 		A3D00F4F27D2819500F31B5D /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = A3D00F4E27D2819500F31B5D /* FirebaseAuthCombine-Community */; };
 		A3D00F5127D2819500F31B5D /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = A3D00F5027D2819500F31B5D /* FirebaseDatabase */; };
+		A3D4A65C27F48A340042AB40 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = A3D4A65B27F48A340042AB40 /* .gitattributes */; };
 		A3FD2E9427EF21C4002FD5A1 /* UserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD2E9327EF21C4002FD5A1 /* UserPresenter.swift */; };
 		A3FD2E9627EF21FA002FD5A1 /* AuthAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD2E9527EF21FA002FD5A1 /* AuthAssembly.swift */; };
 		A516A9A027F089E3006BD170 /* AuthTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A516A99F27F089E3006BD170 /* AuthTest.swift */; };
@@ -66,6 +67,7 @@
 		A397EBD827F1AA1A002E6991 /* RegViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegViewController.swift; sourceTree = "<group>"; };
 		A397EBE027F1C4BD002E6991 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../../../Desktop/Main.storyboard; sourceTree = "<group>"; };
 		A3D00F4727D27F4A00F31B5D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A3D4A65B27F48A340042AB40 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 		A3FD2E9327EF21C4002FD5A1 /* UserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPresenter.swift; sourceTree = "<group>"; };
 		A3FD2E9527EF21FA002FD5A1 /* AuthAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAssembly.swift; sourceTree = "<group>"; };
 		A516A99F27F089E3006BD170 /* AuthTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTest.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 		A5C1A4BA27D2799A00866EB7 = {
 			isa = PBXGroup;
 			children = (
+				A3D4A65B27F48A340042AB40 /* .gitattributes */,
 				A5C1A4C527D2799A00866EB7 /* TinkAutoParking */,
 				A5C1A4DF27D2799B00866EB7 /* TinkAutoParkingTests */,
 				A5C1A4E927D2799B00866EB7 /* TinkAutoParkingUITests */,
@@ -411,6 +414,7 @@
 				A5C1A4D327D2799A00866EB7 /* Assets.xcassets in Resources */,
 				A592DF9D27DE1E4B0016B84D /* TileSet.sks in Resources */,
 				A5B0C0DD27D8EEC800D35401 /* MapScene.sks in Resources */,
+				A3D4A65C27F48A340042AB40 /* .gitattributes in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
