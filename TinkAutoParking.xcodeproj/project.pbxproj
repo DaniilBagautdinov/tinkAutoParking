@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A301D10127F0A8F4003A9397 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A301D10027F0A8F4003A9397 /* AuthService.swift */; };
+		A301D10427F0AD10003A9397 /* UserDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = A301D10327F0AD10003A9397 /* UserDB.swift */; };
+		A301D10627F0AE7E003A9397 /* DataBaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A301D10527F0AE7E003A9397 /* DataBaseService.swift */; };
+		A301D10927F0AF19003A9397 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A301D10827F0AF19003A9397 /* FirebaseFirestore */; };
 		A36F424127D515950001F773 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = A36F424027D515950001F773 /* GoogleSignIn */; };
+		A397EBD927F1AA1A002E6991 /* RegViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A397EBD827F1AA1A002E6991 /* RegViewController.swift */; };
+		A397EBE127F1C4BD002E6991 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A397EBE027F1C4BD002E6991 /* Main.storyboard */; };
 		A3D00F4827D27F4A00F31B5D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3D00F4727D27F4A00F31B5D /* GoogleService-Info.plist */; };
 		A3D00F4B27D2819500F31B5D /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = A3D00F4A27D2819500F31B5D /* FirebaseAnalytics */; };
 		A3D00F4D27D2819500F31B5D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A3D00F4C27D2819500F31B5D /* FirebaseAuth */; };
 		A3D00F4F27D2819500F31B5D /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = A3D00F4E27D2819500F31B5D /* FirebaseAuthCombine-Community */; };
 		A3D00F5127D2819500F31B5D /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = A3D00F5027D2819500F31B5D /* FirebaseDatabase */; };
-		A3FD2E9127EF21A9002FD5A1 /* UserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD2E9027EF21A9002FD5A1 /* UserInteractor.swift */; };
+		A3D4A65C27F48A340042AB40 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = A3D4A65B27F48A340042AB40 /* .gitattributes */; };
 		A3FD2E9427EF21C4002FD5A1 /* UserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD2E9327EF21C4002FD5A1 /* UserPresenter.swift */; };
 		A3FD2E9627EF21FA002FD5A1 /* AuthAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD2E9527EF21FA002FD5A1 /* AuthAssembly.swift */; };
 		A516A9A027F089E3006BD170 /* AuthTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A516A99F27F089E3006BD170 /* AuthTest.swift */; };
@@ -24,7 +30,6 @@
 		A5C1A4C727D2799A00866EB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1A4C627D2799A00866EB7 /* AppDelegate.swift */; };
 		A5C1A4C927D2799A00866EB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1A4C827D2799A00866EB7 /* SceneDelegate.swift */; };
 		A5C1A4CB27D2799A00866EB7 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1A4CA27D2799A00866EB7 /* AuthViewController.swift */; };
-		A5C1A4CE27D2799A00866EB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C1A4CC27D2799A00866EB7 /* Main.storyboard */; };
 		A5C1A4D127D2799A00866EB7 /* TinkAutoParking.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A5C1A4CF27D2799A00866EB7 /* TinkAutoParking.xcdatamodeld */; };
 		A5C1A4D327D2799A00866EB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5C1A4D227D2799A00866EB7 /* Assets.xcassets */; };
 		A5C1A4D627D2799A00866EB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C1A4D427D2799A00866EB7 /* LaunchScreen.storyboard */; };
@@ -54,9 +59,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A301D10027F0A8F4003A9397 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		A301D10327F0AD10003A9397 /* UserDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDB.swift; sourceTree = "<group>"; };
+		A301D10527F0AE7E003A9397 /* DataBaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseService.swift; sourceTree = "<group>"; };
 		A36F423E27D50E610001F773 /* TinkAutoParking.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TinkAutoParking.entitlements; sourceTree = "<group>"; };
+		A397EBD827F1AA1A002E6991 /* RegViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegViewController.swift; sourceTree = "<group>"; };
+		A397EBE027F1C4BD002E6991 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../../../Desktop/Main.storyboard; sourceTree = "<group>"; };
 		A3D00F4727D27F4A00F31B5D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		A3FD2E9027EF21A9002FD5A1 /* UserInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInteractor.swift; sourceTree = "<group>"; };
+		A3D4A65B27F48A340042AB40 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 		A3FD2E9327EF21C4002FD5A1 /* UserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPresenter.swift; sourceTree = "<group>"; };
 		A3FD2E9527EF21FA002FD5A1 /* AuthAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAssembly.swift; sourceTree = "<group>"; };
 		A516A99F27F089E3006BD170 /* AuthTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTest.swift; sourceTree = "<group>"; };
@@ -68,7 +78,6 @@
 		A5C1A4C627D2799A00866EB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5C1A4C827D2799A00866EB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A5C1A4CA27D2799A00866EB7 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
-		A5C1A4CD27D2799A00866EB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5C1A4D027D2799A00866EB7 /* TinkAutoParking.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TinkAutoParking.xcdatamodel; sourceTree = "<group>"; };
 		A5C1A4D227D2799A00866EB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5C1A4D527D2799A00866EB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -93,6 +102,7 @@
 				A3D00F4F27D2819500F31B5D /* FirebaseAuthCombine-Community in Frameworks */,
 				A3D00F5127D2819500F31B5D /* FirebaseDatabase in Frameworks */,
 				A3D00F4D27D2819500F31B5D /* FirebaseAuth in Frameworks */,
+				A301D10927F0AF19003A9397 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,10 +123,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A301D0FF27F0A8E3003A9397 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A301D10027F0A8F4003A9397 /* AuthService.swift */,
+				A301D10527F0AE7E003A9397 /* DataBaseService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A301D10227F0ACFC003A9397 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A301D10327F0AD10003A9397 /* UserDB.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A301D10727F0AF19003A9397 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A3FD2E8C27EF212F002FD5A1 /* Authorization */ = {
 			isa = PBXGroup;
 			children = (
-				A3FD2E8D27EF213D002FD5A1 /* Interactor */,
+				A301D0FF27F0A8E3003A9397 /* Services */,
+				A301D10227F0ACFC003A9397 /* Model */,
 				A3FD2E8E27EF2149002FD5A1 /* View */,
 				A3FD2E8F27EF2151002FD5A1 /* Presenter */,
 				A3FD2E9527EF21FA002FD5A1 /* AuthAssembly.swift */,
@@ -124,18 +159,11 @@
 			path = Authorization;
 			sourceTree = "<group>";
 		};
-		A3FD2E8D27EF213D002FD5A1 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				A3FD2E9027EF21A9002FD5A1 /* UserInteractor.swift */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
 		A3FD2E8E27EF2149002FD5A1 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				A5C1A4CA27D2799A00866EB7 /* AuthViewController.swift */,
+				A397EBD827F1AA1A002E6991 /* RegViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -151,10 +179,12 @@
 		A5C1A4BA27D2799A00866EB7 = {
 			isa = PBXGroup;
 			children = (
+				A3D4A65B27F48A340042AB40 /* .gitattributes */,
 				A5C1A4C527D2799A00866EB7 /* TinkAutoParking */,
 				A5C1A4DF27D2799B00866EB7 /* TinkAutoParkingTests */,
 				A5C1A4E927D2799B00866EB7 /* TinkAutoParkingUITests */,
 				A5C1A4C427D2799A00866EB7 /* Products */,
+				A301D10727F0AF19003A9397 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -176,7 +206,7 @@
 				A36F423E27D50E610001F773 /* TinkAutoParking.entitlements */,
 				A5C1A4C627D2799A00866EB7 /* AppDelegate.swift */,
 				A5C1A4C827D2799A00866EB7 /* SceneDelegate.swift */,
-				A5C1A4CC27D2799A00866EB7 /* Main.storyboard */,
+				A397EBE027F1C4BD002E6991 /* Main.storyboard */,
 				A5CCBD1A27EE1C5A002B33D8 /* Resources */,
 			);
 			path = TinkAutoParking;
@@ -280,6 +310,7 @@
 				A3D00F4E27D2819500F31B5D /* FirebaseAuthCombine-Community */,
 				A3D00F5027D2819500F31B5D /* FirebaseDatabase */,
 				A36F424027D515950001F773 /* GoogleSignIn */,
+				A301D10827F0AF19003A9397 /* FirebaseFirestore */,
 			);
 			productName = TinkAutoParking;
 			productReference = A5C1A4C327D2799A00866EB7 /* TinkAutoParking.app */;
@@ -373,11 +404,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A397EBE127F1C4BD002E6991 /* Main.storyboard in Resources */,
 				A5C1A4D627D2799A00866EB7 /* LaunchScreen.storyboard in Resources */,
 				A3D00F4827D27F4A00F31B5D /* GoogleService-Info.plist in Resources */,
 				A5C1A4D327D2799A00866EB7 /* Assets.xcassets in Resources */,
 				A592DF9D27DE1E4B0016B84D /* TileSet.sks in Resources */,
 				A5C1A4CE27D2799A00866EB7 /* Main.storyboard in Resources */,
+				A5B0C0DD27D8EEC800D35401 /* MapScene.sks in Resources */,
+				A3D4A65C27F48A340042AB40 /* .gitattributes in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,11 +437,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5CCBD1927EE1C4A002B33D8 /* MapAssembly.swift in Sources */,
-				A3FD2E9127EF21A9002FD5A1 /* UserInteractor.swift in Sources */,
 				A5B0C0E127D8EEEC00D35401 /* MapScene.swift in Sources */,
+				A301D10627F0AE7E003A9397 /* DataBaseService.swift in Sources */,
 				A3FD2E9627EF21FA002FD5A1 /* AuthAssembly.swift in Sources */,
 				A561FCAE27DE244800E53D83 /* MapViewController.swift in Sources */,
 				A5C1A4CB27D2799A00866EB7 /* AuthViewController.swift in Sources */,
+				A301D10427F0AD10003A9397 /* UserDB.swift in Sources */,
+				A301D10127F0A8F4003A9397 /* AuthService.swift in Sources */,
 				A5CCBD1727EE1C41002B33D8 /* MapPresenter.swift in Sources */,
 				A5C1A4C727D2799A00866EB7 /* AppDelegate.swift in Sources */,
 				A5CCBD1527EE1C38002B33D8 /* MapModel.swift in Sources */,
@@ -415,6 +451,7 @@
 				A540545027F2D39500352CB1 /* Camera.swift in Sources */,
 				A5C1A4D127D2799A00866EB7 /* TinkAutoParking.xcdatamodeld in Sources */,
 				A3FD2E9427EF21C4002FD5A1 /* UserPresenter.swift in Sources */,
+				A397EBD927F1AA1A002E6991 /* RegViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,14 +489,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A5C1A4CC27D2799A00866EB7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A5C1A4CD27D2799A00866EB7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A5C1A4D427D2799A00866EB7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -788,6 +817,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		A301D10827F0AF19003A9397 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A3D00F4927D2819500F31B5D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
 		A36F424027D515950001F773 /* GoogleSignIn */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A36F423F27D515950001F773 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
