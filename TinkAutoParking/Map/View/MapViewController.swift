@@ -24,22 +24,18 @@ class MapViewController: UIViewController {
 //        fatalError("init(coder:) has not been implemented")
 //    }
     
-    override func loadView() {
-        self.view = SKView()
-    }
+    var demoScene: MapScene!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
-            if let scene = SKScene(fileNamed: "MapScene") {
-                // Set the scale mode to scale to fit the window
-                scene.scaleMode = .aspectFill
-                
-                // Present the scene
-                view.presentScene(scene)
-            }
+            demoScene = MapScene(size: view.bounds.size)
+            demoScene.scaleMode = .resizeFill
+            
+            // Present the scene.
+            view.presentScene(demoScene)
             
             view.ignoresSiblingOrder = true
             
