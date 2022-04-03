@@ -13,16 +13,16 @@ protocol MapViewControllerProtocol: AnyObject {
 
 class MapViewController: UIViewController {
     
-//    let presenter: MapPresenterProtocol
-//    
-//    init(presenter: MapPresenterProtocol) {
-//        self.presenter = presenter
-//        super.init(nibName: nil, bundle: nil)
-//    }
-//
-//    required init?(coder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
-//    }
+    let presenter: MapPresenterProtocol
+    
+    init(presenter: MapPresenterProtocol) {
+        self.presenter = presenter
+        super.init(nibName: "MapViewController", bundle: nil)
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     var demoScene: MapScene!
     
@@ -67,6 +67,6 @@ extension MapViewController: MapViewControllerProtocol {
 
 extension MapViewController: MapSceneDelegate {
     func showScreen() {
-        self.performSegue(withIdentifier: "segueVC", sender: nil)
+        present(DetailViewController(), animated: true)
     }
 }

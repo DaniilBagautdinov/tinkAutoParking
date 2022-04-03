@@ -18,7 +18,7 @@ class MapTest: XCTestCase {
     override func setUpWithError() throws {
         try super.setUpWithError()
         mapAssembly = MapAssembly()
-        viewController = MapViewController()
+        viewController = MapViewController(presenter: MapPresenter(model: MapModel()))
         viewController.view = SKView()
         viewController.viewDidLoad()
     }

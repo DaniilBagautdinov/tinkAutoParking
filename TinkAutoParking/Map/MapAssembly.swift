@@ -16,9 +16,7 @@ final class MapAssembly: MapAssemblyProtocol {
     func assemble() -> UIViewController {
         let model = MapModel()
         let presenter = MapPresenter(model: model)
-        let viewController = MapViewController(
-        //presenter: presenter
-        )
+        let viewController = MapViewController(presenter: presenter)
         
         presenter.view = viewController
         
