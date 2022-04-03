@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LkV-8W-k8z">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -50,7 +50,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Еще не зарегистрировались?"/>
                                 <connections>
-                                    <segue destination="rXv-34-dzs" kind="presentation" id="bTg-qJ-C8R"/>
+                                    <segue destination="rXv-34-dzs" kind="presentation" modalPresentationStyle="fullScreen" id="bTg-qJ-C8R"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -58,6 +58,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="dontHaveAccountButton" destination="ISw-X9-z6a" id="Zij-j5-aWN"/>
                         <outlet property="emailTextField" destination="dwb-is-Kuf" id="Fev-6n-HBj"/>
                         <outlet property="passwordTextField" destination="E69-hS-OM9" id="xAA-EC-fI8"/>
                     </connections>
@@ -71,7 +72,7 @@
             <objects>
                 <viewController id="rXv-34-dzs" customClass="RegViewController" customModule="TinkAutoParking" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kNn-qN-zJ6">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CCn-Ui-ym4">
@@ -107,6 +108,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Уже есть аккаунт"/>
+                                <connections>
+                                    <action selector="alreadyHaveAccountButton:" destination="rXv-34-dzs" eventType="touchUpInside" id="FxW-q3-UTk"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5mv-bM-a2A">
                                 <rect key="frame" x="20" y="406" width="388" height="34"/>
@@ -122,6 +126,7 @@
                         <outlet property="emailTextField" destination="CCn-Ui-ym4" id="Boa-EJ-h3u"/>
                         <outlet property="firstPassTextField" destination="5mv-bM-a2A" id="avx-MZ-35B"/>
                         <outlet property="secondPassTextField" destination="cdI-Ig-fJz" id="Iyx-tR-ENs"/>
+                        <outlet property="signUpButton" destination="maP-GZ-q49" id="aDu-jh-e4j"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rtG-a7-6co" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

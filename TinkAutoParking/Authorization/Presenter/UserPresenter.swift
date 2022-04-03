@@ -8,7 +8,7 @@
 import Foundation
 
 protocol UserPresenterProtocol {
-
+    
 }
 
 final class UserPresenter {
@@ -19,7 +19,6 @@ final class UserPresenter {
     init (userModel: UserDBProtocol) {
        self.userModel = userModel
     }
-    
 }
 
 extension UserPresenter: UserPresenterProtocol {
