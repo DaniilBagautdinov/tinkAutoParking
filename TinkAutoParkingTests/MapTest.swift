@@ -11,53 +11,52 @@ import SpriteKit
 
 class MapTest: XCTestCase {
     
-    var mapScene: MapScene!
     var mapAssembly: MapAssembly!
     var viewController: MapViewController!
+    var camera: Camera!
 
     override func setUpWithError() throws {
         try super.setUpWithError()
-        mapScene = MapScene()
         mapAssembly = MapAssembly()
         viewController = MapViewController()
+        viewController.view = SKView()
         viewController.viewDidLoad()
     }
 
     override func tearDownWithError() throws {
-        mapScene = nil
         mapAssembly = nil
         viewController = nil
+        camera = nil
         try super.tearDownWithError()
     }
 
     func testXCoordinatesSuccess() throws {
-        let result = mapScene.xСoordinates(previousCameraPointX: 10, translatrionX: 10, movementSpeed: 10)
-        XCTAssertEqual(result, -160)
+        let result = viewController.demoScene.demoCamera.XCoordinates()
+        print(result)
+        XCTAssertEqual(result, -50)
     }
     
     func testXCoordinatesFail() throws {
-        let result = mapScene.xСoordinates(previousCameraPointX: 10, translatrionX: 10, movementSpeed: 10)
-        XCTAssertNotEqual(result, -150)
+        let result = viewController.demoScene.demoCamera.XCoordinates()
+        XCTAssertNotEqual(result, -60)
     }
     
     func testYCoordinatesSuccess() throws {
-        let result = mapScene.yСoordinates(previousCameraPointY: 10, translatrionY: 10, movementSpeed: 10)
-        XCTAssertEqual(result, 180)
+        let result = viewController.demoScene.demoCamera.yCoordinates(height: 100)
+        XCTAssertEqual(result, 100)
     }
     
     func testYCoordinatesFail() throws {
-        let result = mapScene.yСoordinates(previousCameraPointY: 10, translatrionY: 10, movementSpeed: 10)
-        XCTAssertNotEqual(result, 170)
+        let result = viewController.demoScene.demoCamera.yCoordinates(height: 70)
+        XCTAssertNotEqual(result, 100)
     }
     
-    func testCameraNewScaleCoordinatesSuccess() throws {
-        let result = mapScene.cameraNewScaleCoordinates(previousCameraScale: 10, scale: 10)
-        XCTAssertEqual(result, 1)
+    func testShowViewport() throws {
+        XCTAssertEqual(viewController.demoScene.demoCamera.childNode(withName: "viewportLabel"), viewController.demoScene.demoCamera.viewportLabel)
     }
     
     func testCameraNewScaleCoordinatesFail() throws {
-        let result = mapScene.cameraNewScaleCoordinates(previousCameraScale: 10, scale: 10)
-        XCTAssertNotEqual(result, 3)
+        XCTAssertNotEqual(viewController.demoScene.demoCamera.childNode(withName: "viewportLabel"), viewController.demoScene.demoCamera.positionLabel)
     }
     
     func testAssemblySuccess() throws {
