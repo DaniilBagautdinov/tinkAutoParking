@@ -18,7 +18,7 @@ class AuthViewController: UIViewController {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    
+    @IBOutlet weak var dontHaveAccountButton: UIButton!
     
      private var isAuth = true
 
@@ -46,10 +46,8 @@ class AuthViewController: UIViewController {
             case .failure(let error):
                 print(error)
             }
-            
         }
     }
-    
 }
 
 extension AuthViewController: AuthViewControllerProtocol {

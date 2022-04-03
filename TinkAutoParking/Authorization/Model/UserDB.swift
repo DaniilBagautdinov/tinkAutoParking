@@ -16,9 +16,8 @@ struct UserDB: Identifiable, UserDBProtocol {
     var id: String = UUID().uuidString
     var name: String
     var car: String
-
+    
     var representation: [String: Any] {
-        
         var repres = [String: Any]()
         repres["id"] = self.id
         repres["name"] = self.name
