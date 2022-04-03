@@ -57,13 +57,13 @@ class Camera: SKCameraNode {
     private var showsViewport = false
     
     /// Position indicator that demonstrates adding game controls to the camera and aids in debugging.
-    private let positionLabel = SKLabelNode(fontNamed: "AppleSDGothicNeo-SemiBold")
+    let positionLabel = SKLabelNode(fontNamed: "AppleSDGothicNeo-SemiBold")
     
     /// Scale indicator that demonstrates adding game controls to the camera and aids in debugging.
-    private let scaleLabel = SKLabelNode(fontNamed: "AppleSDGothicNeo-SemiBold")
+    let scaleLabel = SKLabelNode(fontNamed: "AppleSDGothicNeo-SemiBold")
     
     /// Viewport indicator that demonstrates adding game controls to the camera and aids in debugging.
-    private let viewportLabel = SKLabelNode(fontNamed: "AppleSDGothicNeo-SemiBold")
+    let viewportLabel = SKLabelNode(fontNamed: "AppleSDGothicNeo-SemiBold")
 
     
     // MARK: Initializers
@@ -282,10 +282,19 @@ class Camera: SKCameraNode {
         if (!showsViewport) {
             showsViewport = true
             viewportLabel.fontSize = 8
+            viewportLabel.name = "viewportLabel"
             viewportLabel.fontColor = .white
             viewportLabel.position = CGPoint(x:0.0, y: -30.0)
             addChild(viewportLabel)
         }
+    }
+    
+    func XCoordinates() -> CGFloat {
+        return parent!.frame.size.width / 2 - 50
+    }
+    
+    func yCoordinates(height: CGFloat) -> CGFloat {
+        return -parent!.frame.size.height/2 + height
     }
     
     /**
@@ -311,18 +320,18 @@ class Camera: SKCameraNode {
             let x = position.x.rounded(FloatingPointRoundingRule.toNearestOrEven)
             let y = position.y.rounded(FloatingPointRoundingRule.toNearestOrEven)
             positionLabel.text = "position: (\(x), \(y))"
-            positionLabel.position = CGPoint(x:parent!.frame.size.width / 2 - 50, y: -parent!.frame.size.height/2 + 30)
+            positionLabel.position = CGPoint(x:XCoordinates(), y: yCoordinates(height: 30))
         }
         
         if (showsScale) {
             let scale = round(100 * xScale) / 100.0
             scaleLabel.text = "Scale: \(scale)"
-            scaleLabel.position = CGPoint(x:parent!.frame.size.width / 2 - 50, y: -parent!.frame.size.height/2 + 40)
+            scaleLabel.position = CGPoint(x:XCoordinates(), y: yCoordinates(height: 40))
         }
         
         if (showsViewport) {
             viewportLabel.text = "Viewport: (\(parent!.frame.size.width), \(parent!.frame.size.height))"
-            viewportLabel.position = CGPoint(x:parent!.frame.size.width / 2 - 50, y: -parent!.frame.size.height/2 + 20)
+            viewportLabel.position = CGPoint(x:XCoordinates(), y: yCoordinates(height: 20))
         }
     }
 }
