@@ -19,6 +19,8 @@ class MapScene: SKScene, UIGestureRecognizerDelegate {
     // The whole point of this project is to demonstrate our SKCameraNode subclass!
     let demoCamera: Camera!
     
+    var startPositionCamera = CGPoint()
+    
     var initialScale: CGFloat = 1.0
     
     var sprites: [SKSpriteNode] = []
@@ -87,13 +89,18 @@ class MapScene: SKScene, UIGestureRecognizerDelegate {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         demoCamera.stop()
-        
-        for touch in touches {
-            let location = touch.location(in: self)
-            let node:SKNode = self.atPoint(location)
-            for sprite in sprites {
-                if sprite.position.equalTo(node.position) {
-                    delegatee?.showScreen()
+        startPositionCamera = demoCamera.position
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let touch = touches.first  {
+            if startPositionCamera == demoCamera.position {
+                let location = touch.location(in: self)
+                let node:SKNode = self.atPoint(location)
+                for sprite in sprites {
+                    if sprite.position.equalTo(node.position) {
+                        delegatee?.showScreen()
+                    }
                 }
             }
         }
