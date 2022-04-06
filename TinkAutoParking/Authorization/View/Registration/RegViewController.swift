@@ -20,7 +20,16 @@ class RegViewController: UIViewController {
     @IBOutlet weak var secondPassTextField: UITextField!
     @IBOutlet weak var signUpButton: UIButton!
 
-    let alertFactory = AlertFactory()
+    let alertFactory: ValidationAlertFactory
+    
+    init(alertFactory: ValidationAlertFactory = AlertFactory()) {
+        self.alertFactory = alertFactory
+        super.init(nibName: "RegViewController", bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

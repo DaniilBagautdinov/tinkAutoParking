@@ -21,6 +21,8 @@
 		A3D00F5127D2819500F31B5D /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = A3D00F5027D2819500F31B5D /* FirebaseDatabase */; };
 		A3D4A65C27F48A340042AB40 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = A3D4A65B27F48A340042AB40 /* .gitattributes */; };
 		A3E07B6027F8A6CF00319D66 /* AlertFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E07B5F27F8A6CF00319D66 /* AlertFactory.swift */; };
+		A3EEE36A27FDBBAD0028F844 /* AuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3EEE36927FDBBAD0028F844 /* AuthViewController.xib */; };
+		A3EEE36C27FDBBDC0028F844 /* RegViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3EEE36B27FDBBDC0028F844 /* RegViewController.xib */; };
 		A3FD2E9427EF21C4002FD5A1 /* UserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD2E9327EF21C4002FD5A1 /* UserPresenter.swift */; };
 		A3FD2E9627EF21FA002FD5A1 /* AuthAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD2E9527EF21FA002FD5A1 /* AuthAssembly.swift */; };
 		A516A9A027F089E3006BD170 /* AuthTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A516A99F27F089E3006BD170 /* AuthTest.swift */; };
@@ -71,6 +73,8 @@
 		A3D00F4727D27F4A00F31B5D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A3D4A65B27F48A340042AB40 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 		A3E07B5F27F8A6CF00319D66 /* AlertFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertFactory.swift; sourceTree = "<group>"; };
+		A3EEE36927FDBBAD0028F844 /* AuthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthViewController.xib; sourceTree = "<group>"; };
+		A3EEE36B27FDBBDC0028F844 /* RegViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegViewController.xib; sourceTree = "<group>"; };
 		A3FD2E9327EF21C4002FD5A1 /* UserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPresenter.swift; sourceTree = "<group>"; };
 		A3FD2E9527EF21FA002FD5A1 /* AuthAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAssembly.swift; sourceTree = "<group>"; };
 		A516A99F27F089E3006BD170 /* AuthTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTest.swift; sourceTree = "<group>"; };
@@ -154,6 +158,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A3EEE36627FDBB620028F844 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				A397EBD827F1AA1A002E6991 /* RegViewController.swift */,
+				A3EEE36B27FDBBDC0028F844 /* RegViewController.xib */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		A3EEE36827FDBB770028F844 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				A5C1A4CA27D2799A00866EB7 /* AuthViewController.swift */,
+				A3EEE36927FDBBAD0028F844 /* AuthViewController.xib */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		A3FD2E8C27EF212F002FD5A1 /* Authorization */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,8 +191,8 @@
 		A3FD2E8E27EF2149002FD5A1 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A5C1A4CA27D2799A00866EB7 /* AuthViewController.swift */,
-				A397EBD827F1AA1A002E6991 /* RegViewController.swift */,
+				A3EEE36827FDBB770028F844 /* Auth */,
+				A3EEE36627FDBB620028F844 /* Registration */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -430,9 +452,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A397EBE127F1C4BD002E6991 /* Main.storyboard in Resources */,
+				A3EEE36C27FDBBDC0028F844 /* RegViewController.xib in Resources */,
 				A5C1A4D627D2799A00866EB7 /* LaunchScreen.storyboard in Resources */,
 				A3D00F4827D27F4A00F31B5D /* GoogleService-Info.plist in Resources */,
 				A51C6A6127F9F8530021F538 /* DetailViewController.xib in Resources */,
+				A3EEE36A27FDBBAD0028F844 /* AuthViewController.xib in Resources */,
 				A5C1A4D327D2799A00866EB7 /* Assets.xcassets in Resources */,
 				A51C6A5A27F9F6940021F538 /* MapViewController.xib in Resources */,
 				A592DF9D27DE1E4B0016B84D /* TileSet.sks in Resources */,

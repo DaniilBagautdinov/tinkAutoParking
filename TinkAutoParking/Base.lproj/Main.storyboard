@@ -40,28 +40,17 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Войти"/>
-                                <connections>
-                                    <action selector="signInButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ILN-sh-l1H"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISw-X9-z6a">
                                 <rect key="frame" x="94" y="633" width="241" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Еще не зарегистрировались?"/>
-                                <connections>
-                                    <segue destination="rXv-34-dzs" kind="presentation" modalPresentationStyle="fullScreen" id="bTg-qJ-C8R"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <connections>
-                        <outlet property="dontHaveAccountButton" destination="ISw-X9-z6a" id="Zij-j5-aWN"/>
-                        <outlet property="emailTextField" destination="dwb-is-Kuf" id="Fev-6n-HBj"/>
-                        <outlet property="passwordTextField" destination="E69-hS-OM9" id="xAA-EC-fI8"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -99,18 +88,12 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Создать аккаунт"/>
-                                <connections>
-                                    <action selector="signUpButton:" destination="rXv-34-dzs" eventType="touchUpInside" id="FhJ-cm-lWe"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubc-4x-l2q">
                                 <rect key="frame" x="94" y="635" width="241" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Уже есть аккаунт"/>
-                                <connections>
-                                    <action selector="alreadyHaveAccountButton:" destination="rXv-34-dzs" eventType="touchUpInside" id="FxW-q3-UTk"/>
-                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5mv-bM-a2A">
                                 <rect key="frame" x="20" y="406" width="388" height="34"/>
@@ -122,12 +105,6 @@
                         <viewLayoutGuide key="safeArea" id="mCj-uH-Oxv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <connections>
-                        <outlet property="emailTextField" destination="CCn-Ui-ym4" id="Boa-EJ-h3u"/>
-                        <outlet property="firstPassTextField" destination="5mv-bM-a2A" id="avx-MZ-35B"/>
-                        <outlet property="secondPassTextField" destination="cdI-Ig-fJz" id="Iyx-tR-ENs"/>
-                        <outlet property="signUpButton" destination="maP-GZ-q49" id="aDu-jh-e4j"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rtG-a7-6co" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
