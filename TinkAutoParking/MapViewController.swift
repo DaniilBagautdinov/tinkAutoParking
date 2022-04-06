@@ -7,35 +7,20 @@ import UIKit
 import SpriteKit
 import GameplayKit
 
-protocol MapViewControllerProtocol: AnyObject {
-    
-}
-
 class MapViewController: UIViewController {
-    
-    let presenter: MapPresenterProtocol
-    
-    init(presenter: MapPresenterProtocol) {
-        self.presenter = presenter
-        super.init(nibName: "MapViewController", bundle: nil)
-    }
 
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    var demoScene: MapScene!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
-            demoScene = MapScene(size: view.bounds.size)
-            demoScene.scaleMode = .resizeFill
-            demoScene.delegatee = self
-            // Present the scene.
-            view.presentScene(demoScene)
+            if let scene = SKScene(fileNamed: "MapScene") {
+                // Set the scale mode to scale to fit the window
+                scene.scaleMode = .aspectFill
+                
+                // Present the scene
+                view.presentScene(scene)
+            }
             
             view.ignoresSiblingOrder = true
             
@@ -58,15 +43,5 @@ class MapViewController: UIViewController {
 
     override var prefersStatusBarHidden: Bool {
         return true
-    }
-}
-
-extension MapViewController: MapViewControllerProtocol {
-    
-}
-
-extension MapViewController: MapSceneDelegate {
-    func showScreen() {
-        present(DetailViewController(), animated: true)
     }
 }
