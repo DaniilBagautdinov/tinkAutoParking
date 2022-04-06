@@ -18,8 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
         window = UIWindow(frame: UIScreen.main.bounds)
-        let mapController = MapAssembly().assemble()
-        window?.rootViewController = mapController
+        let authViewController = AuthAssembly().assemble()
+        window?.rootViewController = authViewController
         window?.makeKeyAndVisible()
         return true
     }

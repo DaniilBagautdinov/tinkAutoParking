@@ -17,10 +17,7 @@ final class AuthAssembly: AuthAssemblyProtocol {
     func assemble() -> UIViewController {
         let userModel = UserDB(name: "", car: "")
         let presenter = UserPresenter(userModel: userModel)
-        let viewController = AuthViewController(
-            //presenter: presenter
-        )
-        
+        let viewController = AuthViewController(presenter: presenter)
         presenter.view = viewController
         return viewController
     }

@@ -22,16 +22,16 @@ class AuthViewController: UIViewController {
     
      private var isAuth = true
 
-//    let presenter: UserPresenterProtocol
+    let presenter: UserPresenterProtocol
     
-//    init(presenter: UserPresenterProtocol) {
-//        self.presenter = presenter
-//        super.init()
-//    }
-//
-//    required init?(coder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
-//    }
+    init(presenter: UserPresenterProtocol) {
+        self.presenter = presenter
+        super.init(nibName: "AuthViewController", bundle: nil)
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,6 +48,13 @@ class AuthViewController: UIViewController {
             }
         }
     }
+    
+    @IBAction func dontHaveAccButton(_ sender: Any) {
+        let regViewController = RegViewController()
+        regViewController.modalPresentationStyle = .fullScreen
+        present(regViewController, animated: true)
+    }
+    
 }
 
 extension AuthViewController: AuthViewControllerProtocol {
