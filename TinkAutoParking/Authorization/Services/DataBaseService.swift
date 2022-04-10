@@ -13,7 +13,7 @@ final class DataBaseService {
     static let shared = DataBaseService()
     private let dataBase = Firestore.firestore()
     
-    private var usersRef: CollectionReference {
+    var usersRef: CollectionReference {
         return dataBase.collection("users")
     }
     

@@ -16,7 +16,7 @@ class AuthService {
     
     private let auth = Auth.auth()
     
-    private var currentUser: User? {
+    var currentUser: User? {
         return auth.currentUser
     }
     
