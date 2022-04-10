@@ -11,6 +11,9 @@
 		A301D10427F0AD10003A9397 /* UserDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = A301D10327F0AD10003A9397 /* UserDB.swift */; };
 		A301D10627F0AE7E003A9397 /* DataBaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A301D10527F0AE7E003A9397 /* DataBaseService.swift */; };
 		A301D10927F0AF19003A9397 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A301D10827F0AF19003A9397 /* FirebaseFirestore */; };
+		A35DFA962802F864000D9531 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35DFA942802F864000D9531 /* ProfileViewController.swift */; };
+		A35DFA972802F864000D9531 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A35DFA952802F864000D9531 /* ProfileViewController.xib */; };
+		A35DFA9B2802FDC9000D9531 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35DFA9A2802FDC9000D9531 /* ProfileModel.swift */; };
 		A36F424127D515950001F773 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = A36F424027D515950001F773 /* GoogleSignIn */; };
 		A397EBD927F1AA1A002E6991 /* RegViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A397EBD827F1AA1A002E6991 /* RegViewController.swift */; };
 		A397EBE127F1C4BD002E6991 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A397EBE027F1C4BD002E6991 /* Main.storyboard */; };
@@ -67,6 +70,9 @@
 		A301D10027F0A8F4003A9397 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		A301D10327F0AD10003A9397 /* UserDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDB.swift; sourceTree = "<group>"; };
 		A301D10527F0AE7E003A9397 /* DataBaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseService.swift; sourceTree = "<group>"; };
+		A35DFA942802F864000D9531 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A35DFA952802F864000D9531 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		A35DFA9A2802FDC9000D9531 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
 		A36F423E27D50E610001F773 /* TinkAutoParking.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TinkAutoParking.entitlements; sourceTree = "<group>"; };
 		A397EBD827F1AA1A002E6991 /* RegViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegViewController.swift; sourceTree = "<group>"; };
 		A397EBE027F1C4BD002E6991 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -158,6 +164,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A35DFA932802F69E000D9531 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				A35DFA992802FDBB000D9531 /* Model */,
+				A35DFA982802F87D000D9531 /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		A35DFA982802F87D000D9531 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A35DFA942802F864000D9531 /* ProfileViewController.swift */,
+				A35DFA952802F864000D9531 /* ProfileViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A35DFA992802FDBB000D9531 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A35DFA9A2802FDC9000D9531 /* ProfileModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		A3EEE36627FDBB620028F844 /* Registration */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +279,7 @@
 		A5C1A4C527D2799A00866EB7 /* TinkAutoParking */ = {
 			isa = PBXGroup;
 			children = (
+				A35DFA932802F69E000D9531 /* Profile */,
 				A36F423E27D50E610001F773 /* TinkAutoParking.entitlements */,
 				A5C1A4C627D2799A00866EB7 /* AppDelegate.swift */,
 				A397EBE027F1C4BD002E6991 /* Main.storyboard */,
@@ -456,6 +489,7 @@
 				A5C1A4D627D2799A00866EB7 /* LaunchScreen.storyboard in Resources */,
 				A3D00F4827D27F4A00F31B5D /* GoogleService-Info.plist in Resources */,
 				A51C6A6127F9F8530021F538 /* DetailViewController.xib in Resources */,
+				A35DFA972802F864000D9531 /* ProfileViewController.xib in Resources */,
 				A3EEE36A27FDBBAD0028F844 /* AuthViewController.xib in Resources */,
 				A5C1A4D327D2799A00866EB7 /* Assets.xcassets in Resources */,
 				A51C6A5A27F9F6940021F538 /* MapViewController.xib in Resources */,
@@ -489,8 +523,10 @@
 				A3E07B6027F8A6CF00319D66 /* AlertFactory.swift in Sources */,
 				A5B0C0E127D8EEEC00D35401 /* MapScene.swift in Sources */,
 				A301D10627F0AE7E003A9397 /* DataBaseService.swift in Sources */,
+				A35DFA9B2802FDC9000D9531 /* ProfileModel.swift in Sources */,
 				A3FD2E9627EF21FA002FD5A1 /* AuthAssembly.swift in Sources */,
 				A561FCAE27DE244800E53D83 /* MapViewController.swift in Sources */,
+				A35DFA962802F864000D9531 /* ProfileViewController.swift in Sources */,
 				A5C1A4CB27D2799A00866EB7 /* AuthViewController.swift in Sources */,
 				A301D10427F0AD10003A9397 /* UserDB.swift in Sources */,
 				A301D10127F0A8F4003A9397 /* AuthService.swift in Sources */,
