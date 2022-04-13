@@ -45,7 +45,7 @@ class Camera: SKCameraNode {
     /// The cameras position and scale range
     var range: (x: (min: CGFloat, max: CGFloat),
                 y: (min: CGFloat, max: CGFloat),
-                z: (min: CGFloat, max: CGFloat)) = ((-1000, 1000), (-1000, 1000),(1, 4))
+                z: (min: CGFloat, max: CGFloat)) = ((-60, 60), (-60, 60),(0.25, 1))
     
     /// A boolean value that indicates whether the camera displays a position indicator.
     private var showsPosition = false

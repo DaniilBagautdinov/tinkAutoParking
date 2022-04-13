@@ -9,7 +9,7 @@ import SpriteKit
 import GameplayKit
 
 protocol MapSceneDelegate: AnyObject {
-    func showScreen()
+    func showScreen(id: Int)
 }
 
 class MapScene: SKScene, UIGestureRecognizerDelegate {
@@ -97,10 +97,13 @@ class MapScene: SKScene, UIGestureRecognizerDelegate {
             if startPositionCamera == demoCamera.position {
                 let location = touch.location(in: self)
                 let node:SKNode = self.atPoint(location)
+                var count = 0
+                print(sprites.count)
                 for sprite in sprites {
                     if sprite.position.equalTo(node.position) {
-                        delegatee?.showScreen()
+                        delegatee?.showScreen(id: count)
                     }
+                    count += 1
                 }
             }
         }
@@ -181,8 +184,8 @@ class MapScene: SKScene, UIGestureRecognizerDelegate {
     // This function just sets up a bunch of shape nodes so we can demonstrate the camera panning and zooming.
     private func addGamePieces() {
         // Keeping column and row numbers even will keep the game centered about the origin because we're working with integers
-        let columns = 18
-        let rows = 18
+        let columns = 4
+        let rows = 8
         let tileSet = SKTileSet(named: "Sample Grid Tile Set")!
         let tileSize = CGSize(width: 128, height: 128)
         let waterTiles = tileSet.tileGroups.first { $0.name == "Water" }

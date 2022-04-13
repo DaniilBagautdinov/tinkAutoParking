@@ -26,6 +26,8 @@ class MapViewController: UIViewController {
     
     var demoScene: MapScene!
     
+    let mapModel: MapModel = MapModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -66,7 +68,12 @@ extension MapViewController: MapViewControllerProtocol {
 }
 
 extension MapViewController: MapSceneDelegate {
-    func showScreen() {
-        present(DetailViewController(), animated: true)
+    func showScreen(id: Int) {
+        let place = mapModel.getPlace(id: id)
+        if ((place?.taken) != nil) {
+            present(DetailViewController(id: id), animated: true)
+        } else {
+            
+        }
     }
 }
