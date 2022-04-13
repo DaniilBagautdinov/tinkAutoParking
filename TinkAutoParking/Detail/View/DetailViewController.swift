@@ -9,7 +9,10 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
-    init() {
+    let id: Int
+    
+    init(id: Int) {
+        self.id = id
         super.init(nibName: "DetailViewController", bundle: nil)
     }
 
@@ -19,7 +22,9 @@ class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func takePlaceButton(_ sender: Any) {
+        
     }
 }

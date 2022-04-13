@@ -16,7 +16,6 @@
 		A35DFA9B2802FDC9000D9531 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35DFA9A2802FDC9000D9531 /* ProfileModel.swift */; };
 		A36F424127D515950001F773 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = A36F424027D515950001F773 /* GoogleSignIn */; };
 		A397EBD927F1AA1A002E6991 /* RegViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A397EBD827F1AA1A002E6991 /* RegViewController.swift */; };
-		A397EBE127F1C4BD002E6991 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A397EBE027F1C4BD002E6991 /* Main.storyboard */; };
 		A3D00F4827D27F4A00F31B5D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3D00F4727D27F4A00F31B5D /* GoogleService-Info.plist */; };
 		A3D00F4B27D2819500F31B5D /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = A3D00F4A27D2819500F31B5D /* FirebaseAnalytics */; };
 		A3D00F4D27D2819500F31B5D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A3D00F4C27D2819500F31B5D /* FirebaseAuth */; };
@@ -35,6 +34,7 @@
 		A540545027F2D39500352CB1 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = A540544F27F2D39500352CB1 /* Camera.swift */; };
 		A561FCAE27DE244800E53D83 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A561FCAD27DE244800E53D83 /* MapViewController.swift */; };
 		A592DF9D27DE1E4B0016B84D /* TileSet.sks in Resources */ = {isa = PBXBuildFile; fileRef = A592DF9C27DE1E4B0016B84D /* TileSet.sks */; };
+		A5A53150280707FE002EE0EA /* DetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A5314F280707FE002EE0EA /* DetailModel.swift */; };
 		A5B0C0E127D8EEEC00D35401 /* MapScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B0C0E027D8EEEC00D35401 /* MapScene.swift */; };
 		A5C1A4C727D2799A00866EB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1A4C627D2799A00866EB7 /* AppDelegate.swift */; };
 		A5C1A4CB27D2799A00866EB7 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1A4CA27D2799A00866EB7 /* AuthViewController.swift */; };
@@ -75,7 +75,6 @@
 		A35DFA9A2802FDC9000D9531 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
 		A36F423E27D50E610001F773 /* TinkAutoParking.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TinkAutoParking.entitlements; sourceTree = "<group>"; };
 		A397EBD827F1AA1A002E6991 /* RegViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegViewController.swift; sourceTree = "<group>"; };
-		A397EBE027F1C4BD002E6991 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A3D00F4727D27F4A00F31B5D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A3D4A65B27F48A340042AB40 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 		A3E07B5F27F8A6CF00319D66 /* AlertFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertFactory.swift; sourceTree = "<group>"; };
@@ -90,6 +89,7 @@
 		A540544F27F2D39500352CB1 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 		A561FCAD27DE244800E53D83 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A592DF9C27DE1E4B0016B84D /* TileSet.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TileSet.sks; sourceTree = "<group>"; };
+		A5A5314F280707FE002EE0EA /* DetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModel.swift; sourceTree = "<group>"; };
 		A5B0C0E027D8EEEC00D35401 /* MapScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScene.swift; sourceTree = "<group>"; };
 		A5C1A4C327D2799A00866EB7 /* TinkAutoParking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinkAutoParking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C1A4C627D2799A00866EB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -240,6 +240,7 @@
 		A51C6A5E27F9F7DC0021F538 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				A5A5314E280707EC002EE0EA /* Model */,
 				A51C6A5F27F9F7F50021F538 /* View */,
 			);
 			path = Detail;
@@ -252,6 +253,14 @@
 				A51C6A6027F9F8530021F538 /* DetailViewController.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		A5A5314E280707EC002EE0EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A5A5314F280707FE002EE0EA /* DetailModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		A5C1A4BA27D2799A00866EB7 = {
@@ -279,11 +288,10 @@
 		A5C1A4C527D2799A00866EB7 /* TinkAutoParking */ = {
 			isa = PBXGroup;
 			children = (
-				A35DFA932802F69E000D9531 /* Profile */,
 				A36F423E27D50E610001F773 /* TinkAutoParking.entitlements */,
 				A5C1A4C627D2799A00866EB7 /* AppDelegate.swift */,
-				A397EBE027F1C4BD002E6991 /* Main.storyboard */,
 				A3FD2E8C27EF212F002FD5A1 /* Authorization */,
+				A35DFA932802F69E000D9531 /* Profile */,
 				A5CCBD1027EE1BFF002B33D8 /* Map */,
 				A51C6A5E27F9F7DC0021F538 /* Detail */,
 				A5CCBD1A27EE1C5A002B33D8 /* Resources */,
@@ -484,7 +492,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A397EBE127F1C4BD002E6991 /* Main.storyboard in Resources */,
 				A3EEE36C27FDBBDC0028F844 /* RegViewController.xib in Resources */,
 				A5C1A4D627D2799A00866EB7 /* LaunchScreen.storyboard in Resources */,
 				A3D00F4827D27F4A00F31B5D /* GoogleService-Info.plist in Resources */,
@@ -535,6 +542,7 @@
 				A5C1A4C727D2799A00866EB7 /* AppDelegate.swift in Sources */,
 				A5CCBD1527EE1C38002B33D8 /* MapModel.swift in Sources */,
 				A540545027F2D39500352CB1 /* Camera.swift in Sources */,
+				A5A53150280707FE002EE0EA /* DetailModel.swift in Sources */,
 				A5C1A4D127D2799A00866EB7 /* TinkAutoParking.xcdatamodeld in Sources */,
 				A3FD2E9427EF21C4002FD5A1 /* UserPresenter.swift in Sources */,
 				A397EBD927F1AA1A002E6991 /* RegViewController.swift in Sources */,
