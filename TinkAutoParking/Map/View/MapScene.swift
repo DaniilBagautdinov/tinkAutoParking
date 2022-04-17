@@ -25,6 +25,8 @@ class MapScene: SKScene, UIGestureRecognizerDelegate {
     
     var sprites: [SKSpriteNode] = []
     
+    var profileButton = SKSpriteNode(color: .red, size: CGSize(width: 20, height: 20))
+    
     weak var delegatee: MapSceneDelegate?
     
     // MARK: Initializers
@@ -48,13 +50,9 @@ class MapScene: SKScene, UIGestureRecognizerDelegate {
         
         backgroundColor = SKColor.lightGray
         
-        // Set the scene's camera
-        // If you do not add the camera as a child of the scene panning and zooming will still work,
-        // but none of the children of the camera will be rendered. So, no HUD or game controls.
         addChild(demoCamera)
         camera = demoCamera
         
-        // Add the game layer node to the scene
         addChild(layer)
     }
     
@@ -98,10 +96,10 @@ class MapScene: SKScene, UIGestureRecognizerDelegate {
                 let location = touch.location(in: self)
                 let node:SKNode = self.atPoint(location)
                 var count = 0
-                print(sprites.count)
                 for sprite in sprites {
                     if sprite.position.equalTo(node.position) {
                         delegatee?.showScreen(id: count)
+                        print(count)
                     }
                     count += 1
                 }
@@ -184,6 +182,8 @@ class MapScene: SKScene, UIGestureRecognizerDelegate {
     // This function just sets up a bunch of shape nodes so we can demonstrate the camera panning and zooming.
     private func addGamePieces() {
         // Keeping column and row numbers even will keep the game centered about the origin because we're working with integers
+        profileButton.position = CGPoint(x: 100, y: 100)
+        
         let columns = 4
         let rows = 8
         let tileSet = SKTileSet(named: "Sample Grid Tile Set")!
@@ -202,7 +202,6 @@ class MapScene: SKScene, UIGestureRecognizerDelegate {
                 sprites.append(spriteGamePiece)
             }
         }
-        
         
         let centerGamePiece = SKShapeNode(circleOfRadius: 5.0)
         centerGamePiece.strokeColor = .red

@@ -42,11 +42,9 @@ class AuthViewController: UIViewController {
         AuthService.shared.signIn(email: emailTextField.text ?? "", password: passwordTextField.text ?? "") { result in
             switch result {
             case .success(let user):
-                //let mapViewController = MapAssembly().assemble()
-               // mapViewController.modalPresentationStyle = .fullScreen
-                let profileViewControlelr = ProfileViewController()
-                profileViewControlelr.modalPresentationStyle = .fullScreen
-                self.present(profileViewControlelr, animated: true)
+                let mapViewController = MapAssembly().assemble()
+                mapViewController.modalPresentationStyle = .fullScreen
+                self.present(mapViewController, animated: true)
                 print(user)
             case .failure(let error):
                 print(error)

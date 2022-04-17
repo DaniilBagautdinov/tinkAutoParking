@@ -8,24 +8,30 @@
 import UIKit
 
 protocol MapModelProtocol {
-    func getPlace(id: Int) -> Place?
+    func getPlace(id: Int, completion: @escaping ((Place) -> (Void)))
 }
 
 final class MapModel: MapModelProtocol {
-    func getPlace(id: Int) -> Place? {
+    func getPlace(id: Int, completion: @escaping ((Place) -> (Void))) {
         var result: Place = Place(taken: false, name: "", car: "", time: "")
+        let group = DispatchGroup()
         let place = DataBaseService.shared.placeRef.document("\(id)")
+        group.enter()
         place.getDocument { (document, error) in
             if let document = document, document.exists {
                 
                 let data = document.data()
                 result = Place(taken: data!["taken"] as! Bool, name: data!["name"] as! String , car: data!["car"] as! String, time: data!["time"] as! String)
                 print("Document data: \(result)")
+                group.leave()
             } else {
                 print("Document does not exist")
+                group.leave()
             }
         }
-        return result
+        group.notify(queue: .main) {
+            completion(result)
+        }
     }
 }
 

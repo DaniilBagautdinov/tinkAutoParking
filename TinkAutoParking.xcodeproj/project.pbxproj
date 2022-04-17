@@ -29,12 +29,14 @@
 		A3FD2E9627EF21FA002FD5A1 /* AuthAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD2E9527EF21FA002FD5A1 /* AuthAssembly.swift */; };
 		A516A9A027F089E3006BD170 /* AuthTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A516A99F27F089E3006BD170 /* AuthTest.swift */; };
 		A51C6A5A27F9F6940021F538 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A51C6A5927F9F6940021F538 /* MapViewController.xib */; };
-		A51C6A5D27F9F7B20021F538 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51C6A5C27F9F7B20021F538 /* DetailViewController.swift */; };
-		A51C6A6127F9F8530021F538 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A51C6A6027F9F8530021F538 /* DetailViewController.xib */; };
+		A51C6A5D27F9F7B20021F538 /* FalseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51C6A5C27F9F7B20021F538 /* FalseViewController.swift */; };
+		A51C6A6127F9F8530021F538 /* FalseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A51C6A6027F9F8530021F538 /* FalseViewController.xib */; };
 		A540545027F2D39500352CB1 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = A540544F27F2D39500352CB1 /* Camera.swift */; };
 		A561FCAE27DE244800E53D83 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A561FCAD27DE244800E53D83 /* MapViewController.swift */; };
 		A592DF9D27DE1E4B0016B84D /* TileSet.sks in Resources */ = {isa = PBXBuildFile; fileRef = A592DF9C27DE1E4B0016B84D /* TileSet.sks */; };
-		A5A53150280707FE002EE0EA /* DetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A5314F280707FE002EE0EA /* DetailModel.swift */; };
+		A59B920C280C4C6100A82DF1 /* TrueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59B920A280C4C6100A82DF1 /* TrueViewController.swift */; };
+		A59B920D280C4C6100A82DF1 /* TrueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A59B920B280C4C6100A82DF1 /* TrueViewController.xib */; };
+		A5A53150280707FE002EE0EA /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A5314F280707FE002EE0EA /* PlaceModel.swift */; };
 		A5B0C0E127D8EEEC00D35401 /* MapScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B0C0E027D8EEEC00D35401 /* MapScene.swift */; };
 		A5C1A4C727D2799A00866EB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1A4C627D2799A00866EB7 /* AppDelegate.swift */; };
 		A5C1A4CB27D2799A00866EB7 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1A4CA27D2799A00866EB7 /* AuthViewController.swift */; };
@@ -84,12 +86,14 @@
 		A3FD2E9527EF21FA002FD5A1 /* AuthAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAssembly.swift; sourceTree = "<group>"; };
 		A516A99F27F089E3006BD170 /* AuthTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTest.swift; sourceTree = "<group>"; };
 		A51C6A5927F9F6940021F538 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
-		A51C6A5C27F9F7B20021F538 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		A51C6A6027F9F8530021F538 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		A51C6A5C27F9F7B20021F538 /* FalseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FalseViewController.swift; sourceTree = "<group>"; };
+		A51C6A6027F9F8530021F538 /* FalseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FalseViewController.xib; sourceTree = "<group>"; };
 		A540544F27F2D39500352CB1 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 		A561FCAD27DE244800E53D83 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A592DF9C27DE1E4B0016B84D /* TileSet.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TileSet.sks; sourceTree = "<group>"; };
-		A5A5314F280707FE002EE0EA /* DetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModel.swift; sourceTree = "<group>"; };
+		A59B920A280C4C6100A82DF1 /* TrueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrueViewController.swift; sourceTree = "<group>"; };
+		A59B920B280C4C6100A82DF1 /* TrueViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrueViewController.xib; sourceTree = "<group>"; };
+		A5A5314F280707FE002EE0EA /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 		A5B0C0E027D8EEEC00D35401 /* MapScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScene.swift; sourceTree = "<group>"; };
 		A5C1A4C327D2799A00866EB7 /* TinkAutoParking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinkAutoParking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C1A4C627D2799A00866EB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -237,20 +241,22 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		A51C6A5E27F9F7DC0021F538 /* Detail */ = {
+		A51C6A5E27F9F7DC0021F538 /* Place */ = {
 			isa = PBXGroup;
 			children = (
 				A5A5314E280707EC002EE0EA /* Model */,
 				A51C6A5F27F9F7F50021F538 /* View */,
 			);
-			path = Detail;
+			path = Place;
 			sourceTree = "<group>";
 		};
 		A51C6A5F27F9F7F50021F538 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A51C6A5C27F9F7B20021F538 /* DetailViewController.swift */,
-				A51C6A6027F9F8530021F538 /* DetailViewController.xib */,
+				A51C6A5C27F9F7B20021F538 /* FalseViewController.swift */,
+				A51C6A6027F9F8530021F538 /* FalseViewController.xib */,
+				A59B920A280C4C6100A82DF1 /* TrueViewController.swift */,
+				A59B920B280C4C6100A82DF1 /* TrueViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -258,7 +264,7 @@
 		A5A5314E280707EC002EE0EA /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A5A5314F280707FE002EE0EA /* DetailModel.swift */,
+				A5A5314F280707FE002EE0EA /* PlaceModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -293,7 +299,7 @@
 				A3FD2E8C27EF212F002FD5A1 /* Authorization */,
 				A35DFA932802F69E000D9531 /* Profile */,
 				A5CCBD1027EE1BFF002B33D8 /* Map */,
-				A51C6A5E27F9F7DC0021F538 /* Detail */,
+				A51C6A5E27F9F7DC0021F538 /* Place */,
 				A5CCBD1A27EE1C5A002B33D8 /* Resources */,
 			);
 			path = TinkAutoParking;
@@ -495,7 +501,8 @@
 				A3EEE36C27FDBBDC0028F844 /* RegViewController.xib in Resources */,
 				A5C1A4D627D2799A00866EB7 /* LaunchScreen.storyboard in Resources */,
 				A3D00F4827D27F4A00F31B5D /* GoogleService-Info.plist in Resources */,
-				A51C6A6127F9F8530021F538 /* DetailViewController.xib in Resources */,
+				A51C6A6127F9F8530021F538 /* FalseViewController.xib in Resources */,
+				A59B920D280C4C6100A82DF1 /* TrueViewController.xib in Resources */,
 				A35DFA972802F864000D9531 /* ProfileViewController.xib in Resources */,
 				A3EEE36A27FDBBAD0028F844 /* AuthViewController.xib in Resources */,
 				A5C1A4D327D2799A00866EB7 /* Assets.xcassets in Resources */,
@@ -537,12 +544,13 @@
 				A5C1A4CB27D2799A00866EB7 /* AuthViewController.swift in Sources */,
 				A301D10427F0AD10003A9397 /* UserDB.swift in Sources */,
 				A301D10127F0A8F4003A9397 /* AuthService.swift in Sources */,
-				A51C6A5D27F9F7B20021F538 /* DetailViewController.swift in Sources */,
+				A51C6A5D27F9F7B20021F538 /* FalseViewController.swift in Sources */,
 				A5CCBD1727EE1C41002B33D8 /* MapPresenter.swift in Sources */,
+				A59B920C280C4C6100A82DF1 /* TrueViewController.swift in Sources */,
 				A5C1A4C727D2799A00866EB7 /* AppDelegate.swift in Sources */,
 				A5CCBD1527EE1C38002B33D8 /* MapModel.swift in Sources */,
 				A540545027F2D39500352CB1 /* Camera.swift in Sources */,
-				A5A53150280707FE002EE0EA /* DetailModel.swift in Sources */,
+				A5A53150280707FE002EE0EA /* PlaceModel.swift in Sources */,
 				A5C1A4D127D2799A00866EB7 /* TinkAutoParking.xcdatamodeld in Sources */,
 				A3FD2E9427EF21C4002FD5A1 /* UserPresenter.swift in Sources */,
 				A397EBD927F1AA1A002E6991 /* RegViewController.swift in Sources */,
