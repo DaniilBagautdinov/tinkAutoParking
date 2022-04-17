@@ -21,19 +21,25 @@ class ProfileModel {
         }
     }
     
-    func getUserInfo() -> String {
-        var result: String = ""
+    func getUserInfo(completion: @escaping (([String: Any]?) -> (Void))) {
+        var result: [String: Any]?
+        let group = DispatchGroup()
         if let userID = AuthService.shared.currentUser?.uid {
             let user = DataBaseService.shared.usersRef.document("\(userID)")
+            group.enter()
             user.getDocument { (document, error) in
                 if let document = document, document.exists {
-                    result = document.data().map(String.init(describing:)) ?? "nil"
-                    print("Document data: \(result)")
+                    result = document.data()
+                    print("Document data: \(String(describing: result))")
+                    group.leave()
                 } else {
                     print("Document does not exist")
+                    group.leave()
                 }
             }
         }
-        return result
+        group.notify(queue: .main) {
+            completion(result)
+        }
     }
 }

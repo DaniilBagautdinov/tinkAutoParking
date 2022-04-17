@@ -18,21 +18,23 @@ class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configure()
     }
         
     @IBAction func saveButton(_ sender: Any) {
         profileModel.updateUser(name: nameTextField.text ?? "", car: carTextField.text ?? "")
+        dismiss(animated: true)
     }
     
     private func configure() {
-        let userInfo = profileModel.getUserInfo()
-        nameTextField.text = userInfo
-        carTextField.text = userInfo
+        profileModel.getUserInfo { [self] userInfo in
+            nameTextField.text = userInfo!["name"] as? String
+            carTextField.text = userInfo!["car"] as? String
+        }
     }
     
     @IBAction func signOutButton(_ sender: Any) {
         try! Auth.auth().signOut()
-        dismiss(animated: true)
+        self.presentingViewController?.presentingViewController?.dismiss(animated: true)
     }
-    
 }

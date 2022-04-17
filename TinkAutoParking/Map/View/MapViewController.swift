@@ -61,6 +61,12 @@ class MapViewController: UIViewController {
     override var prefersStatusBarHidden: Bool {
         return true
     }
+    
+    @IBAction func profileButton(_ sender: Any) {
+        let profileViewController = ProfileViewController()
+        profileViewController.modalPresentationStyle = .fullScreen
+        present(profileViewController, animated: true)
+    }
 }
 
 extension MapViewController: MapViewControllerProtocol {
@@ -69,11 +75,12 @@ extension MapViewController: MapViewControllerProtocol {
 
 extension MapViewController: MapSceneDelegate {
     func showScreen(id: Int) {
-        let place = mapModel.getPlace(id: id)
-        if ((place?.taken) != nil) {
-            present(DetailViewController(id: id), animated: true)
-        } else {
-            
+        mapModel.getPlace(id: id) { [self] place in
+            if place.taken {
+                present(TrueViewController(place: place), animated: true)
+            } else {
+                present(FalseViewController(id: id), animated: true)
+            }
         }
     }
 }
