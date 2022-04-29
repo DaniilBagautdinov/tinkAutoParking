@@ -28,7 +28,9 @@ class MapScene: SKScene, UIGestureRecognizerDelegate {
     var profileButton = SKSpriteNode(color: .red, size: CGSize(width: 20, height: 20))
     
     weak var delegatee: MapSceneDelegate?
-    
+        
+    let mapModel: MapModel = MapModel()
+
     // MARK: Initializers
     
     // Init
@@ -54,6 +56,14 @@ class MapScene: SKScene, UIGestureRecognizerDelegate {
         camera = demoCamera
         
         addChild(layer)
+        
+        addGamePieces()
+        updateData()
+        
+        Timer.scheduledTimer(withTimeInterval: 10.0, repeats: true) { [self] timer in
+            updateData()
+        }
+
     }
     
     // When not using an .sks file to build our scenes, we must have this method
@@ -73,8 +83,6 @@ class MapScene: SKScene, UIGestureRecognizerDelegate {
         let pinchGesture = UIPinchGestureRecognizer()
         pinchGesture.addTarget(self, action: #selector(handlePinchGesture(recognizer:)))
         self.view!.addGestureRecognizer(pinchGesture)
-        
-        addGamePieces()
     }
     
     // Called before each frame is rendered
@@ -99,7 +107,7 @@ class MapScene: SKScene, UIGestureRecognizerDelegate {
                 for sprite in sprites {
                     if sprite.position.equalTo(node.position) {
                         delegatee?.showScreen(id: count)
-                        print(count)
+                        updateData()
                     }
                     count += 1
                 }
@@ -209,5 +217,17 @@ class MapScene: SKScene, UIGestureRecognizerDelegate {
         centerGamePiece.position = CGPoint(x: 0, y: 0)
         layer.addChild(centerGamePiece)
     
+    }
+    
+    private func updateData() {
+        for sprite in sprites {
+            mapModel.getPlace(id: sprites.firstIndex(of: sprite) ?? -1) { place in
+                if place.taken {
+                    sprite.texture = SKTexture(imageNamed: "red")
+                } else {
+                    sprite.texture = SKTexture(imageNamed: "tile")
+                }
+            }
+        }
     }
 }
