@@ -20,7 +20,8 @@ final class PlaceModel {
                         "taken" : true,
                         "name" : data!["name"] as! String,
                         "car" : data!["car"] as! String,
-                        "time" : "\(Date())"
+                        "time" : "\(Date())",
+                        "id" : "\(userID)"
                     ])
                 } else {
                     print("Document does not exist")

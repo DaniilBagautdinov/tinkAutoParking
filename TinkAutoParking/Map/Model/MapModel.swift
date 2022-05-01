@@ -13,7 +13,7 @@ protocol MapModelProtocol {
 
 final class MapModel: MapModelProtocol {
     func getPlace(id: Int, completion: @escaping ((Place) -> (Void))) {
-        var result: Place = Place(taken: false, name: "", car: "", time: "")
+        var result: Place = Place(taken: false, name: "", car: "", time: "", id: "")
         let group = DispatchGroup()
         let place = DataBaseService.shared.placeRef.document("\(id)")
         group.enter()
@@ -21,7 +21,7 @@ final class MapModel: MapModelProtocol {
             if let document = document, document.exists {
                 
                 let data = document.data()
-                result = Place(taken: data!["taken"] as! Bool, name: data!["name"] as! String , car: data!["car"] as! String, time: data!["time"] as! String)
+                result = Place(taken: data!["taken"] as! Bool, name: data!["name"] as! String , car: data!["car"] as! String, time: data!["time"] as! String, id: data!["id"] as! String)
                 print("Document data: \(result)")
                 group.leave()
             } else {
@@ -40,4 +40,5 @@ struct Place {
     let name: String
     let car: String
     let time: String
+    let id: String
 }
