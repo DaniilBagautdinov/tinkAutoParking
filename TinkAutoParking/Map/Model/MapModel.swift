@@ -6,12 +6,32 @@
 //
 
 import UIKit
+import SpriteKit
 
 protocol MapModelProtocol {
     func getPlace(id: Int, completion: @escaping ((Place) -> (Void)))
+    func updatePlace(sprites: [SKSpriteNode])
 }
 
 final class MapModel: MapModelProtocol {
+    
+    func updatePlace(sprites: [SKSpriteNode]) {
+        DataBaseService.shared.placeRef
+            .addSnapshotListener { querySnapshot, error in
+                for sprite in sprites {
+                    self.getPlace(id: sprites.firstIndex(of: sprite) ?? -1) { place in
+                        if place.taken {
+                            sprite.texture = SKTexture(imageNamed: "red")
+                        } else {
+                            sprite.texture = SKTexture(imageNamed: "tile")
+                        }
+                    }
+                }
+                
+            }
+    }
+    
+    
     func getPlace(id: Int, completion: @escaping ((Place) -> (Void))) {
         var result: Place = Place(taken: false, name: "", car: "", time: "", id: "")
         let group = DispatchGroup()

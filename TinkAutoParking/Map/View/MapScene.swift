@@ -58,12 +58,7 @@ class MapScene: SKScene, UIGestureRecognizerDelegate {
         addChild(layer)
         
         addGamePieces()
-        updateData()
-        
-        Timer.scheduledTimer(withTimeInterval: 10.0, repeats: true) { [self] timer in
-            updateData()
-        }
-
+        mapModel.updatePlace(sprites: sprites)
     }
     
     // When not using an .sks file to build our scenes, we must have this method
@@ -107,7 +102,6 @@ class MapScene: SKScene, UIGestureRecognizerDelegate {
                 for sprite in sprites {
                     if sprite.position.equalTo(node.position) {
                         delegatee?.showScreen(id: count)
-                        updateData()
                     }
                     count += 1
                 }
@@ -217,17 +211,5 @@ class MapScene: SKScene, UIGestureRecognizerDelegate {
         centerGamePiece.position = CGPoint(x: 0, y: 0)
         layer.addChild(centerGamePiece)
     
-    }
-    
-    private func updateData() {
-        for sprite in sprites {
-            mapModel.getPlace(id: sprites.firstIndex(of: sprite) ?? -1) { place in
-                if place.taken {
-                    sprite.texture = SKTexture(imageNamed: "red")
-                } else {
-                    sprite.texture = SKTexture(imageNamed: "tile")
-                }
-            }
-        }
     }
 }
