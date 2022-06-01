@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A301D10127F0A8F4003A9397 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A301D10027F0A8F4003A9397 /* AuthService.swift */; };
-		A301D10427F0AD10003A9397 /* UserDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = A301D10327F0AD10003A9397 /* UserDB.swift */; };
 		A301D10627F0AE7E003A9397 /* DataBaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A301D10527F0AE7E003A9397 /* DataBaseService.swift */; };
 		A301D10927F0AF19003A9397 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A301D10827F0AF19003A9397 /* FirebaseFirestore */; };
 		A35DFA962802F864000D9531 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35DFA942802F864000D9531 /* ProfileViewController.swift */; };
@@ -25,8 +24,8 @@
 		A3E07B6027F8A6CF00319D66 /* AlertFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E07B5F27F8A6CF00319D66 /* AlertFactory.swift */; };
 		A3EEE36A27FDBBAD0028F844 /* AuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3EEE36927FDBBAD0028F844 /* AuthViewController.xib */; };
 		A3EEE36C27FDBBDC0028F844 /* RegViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3EEE36B27FDBBDC0028F844 /* RegViewController.xib */; };
-		A3FD2E9427EF21C4002FD5A1 /* UserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD2E9327EF21C4002FD5A1 /* UserPresenter.swift */; };
 		A3FD2E9627EF21FA002FD5A1 /* AuthAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD2E9527EF21FA002FD5A1 /* AuthAssembly.swift */; };
+		A50EF36F2847C4F30003799A /* UserDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50EF36E2847C4F30003799A /* UserDB.swift */; };
 		A516A9A027F089E3006BD170 /* AuthTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A516A99F27F089E3006BD170 /* AuthTest.swift */; };
 		A51C6A5A27F9F6940021F538 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A51C6A5927F9F6940021F538 /* MapViewController.xib */; };
 		A51C6A5D27F9F7B20021F538 /* FalseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51C6A5C27F9F7B20021F538 /* FalseViewController.swift */; };
@@ -47,7 +46,6 @@
 		A5C1A4EB27D2799B00866EB7 /* TinkAutoParkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1A4EA27D2799B00866EB7 /* TinkAutoParkingUITests.swift */; };
 		A5C1A4ED27D2799B00866EB7 /* TinkAutoParkingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1A4EC27D2799B00866EB7 /* TinkAutoParkingUITestsLaunchTests.swift */; };
 		A5CCBD1527EE1C38002B33D8 /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CCBD1427EE1C38002B33D8 /* MapModel.swift */; };
-		A5CCBD1727EE1C41002B33D8 /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CCBD1627EE1C41002B33D8 /* MapPresenter.swift */; };
 		A5CCBD1927EE1C4A002B33D8 /* MapAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CCBD1827EE1C4A002B33D8 /* MapAssembly.swift */; };
 /* End PBXBuildFile section */
 
@@ -70,7 +68,6 @@
 
 /* Begin PBXFileReference section */
 		A301D10027F0A8F4003A9397 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
-		A301D10327F0AD10003A9397 /* UserDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDB.swift; sourceTree = "<group>"; };
 		A301D10527F0AE7E003A9397 /* DataBaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseService.swift; sourceTree = "<group>"; };
 		A35DFA942802F864000D9531 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		A35DFA952802F864000D9531 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
@@ -82,8 +79,8 @@
 		A3E07B5F27F8A6CF00319D66 /* AlertFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertFactory.swift; sourceTree = "<group>"; };
 		A3EEE36927FDBBAD0028F844 /* AuthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthViewController.xib; sourceTree = "<group>"; };
 		A3EEE36B27FDBBDC0028F844 /* RegViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegViewController.xib; sourceTree = "<group>"; };
-		A3FD2E9327EF21C4002FD5A1 /* UserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPresenter.swift; sourceTree = "<group>"; };
 		A3FD2E9527EF21FA002FD5A1 /* AuthAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAssembly.swift; sourceTree = "<group>"; };
+		A50EF36E2847C4F30003799A /* UserDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDB.swift; sourceTree = "<group>"; };
 		A516A99F27F089E3006BD170 /* AuthTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTest.swift; sourceTree = "<group>"; };
 		A51C6A5927F9F6940021F538 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		A51C6A5C27F9F7B20021F538 /* FalseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FalseViewController.swift; sourceTree = "<group>"; };
@@ -108,7 +105,6 @@
 		A5C1A4EA27D2799B00866EB7 /* TinkAutoParkingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinkAutoParkingUITests.swift; sourceTree = "<group>"; };
 		A5C1A4EC27D2799B00866EB7 /* TinkAutoParkingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinkAutoParkingUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A5CCBD1427EE1C38002B33D8 /* MapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
-		A5CCBD1627EE1C41002B33D8 /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
 		A5CCBD1827EE1C4A002B33D8 /* MapAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAssembly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,14 +147,6 @@
 				A3E07B5F27F8A6CF00319D66 /* AlertFactory.swift */,
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		A301D10227F0ACFC003A9397 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				A301D10327F0AD10003A9397 /* UserDB.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		A301D10727F0AF19003A9397 /* Frameworks */ = {
@@ -215,10 +203,9 @@
 		A3FD2E8C27EF212F002FD5A1 /* Authorization */ = {
 			isa = PBXGroup;
 			children = (
+				A50EF36D2847C4E00003799A /* Model */,
 				A301D0FF27F0A8E3003A9397 /* Services */,
-				A301D10227F0ACFC003A9397 /* Model */,
 				A3FD2E8E27EF2149002FD5A1 /* View */,
-				A3FD2E8F27EF2151002FD5A1 /* Presenter */,
 				A3FD2E9527EF21FA002FD5A1 /* AuthAssembly.swift */,
 			);
 			path = Authorization;
@@ -233,12 +220,12 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		A3FD2E8F27EF2151002FD5A1 /* Presenter */ = {
+		A50EF36D2847C4E00003799A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A3FD2E9327EF21C4002FD5A1 /* UserPresenter.swift */,
+				A50EF36E2847C4F30003799A /* UserDB.swift */,
 			);
-			path = Presenter;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		A51C6A5E27F9F7DC0021F538 /* Place */ = {
@@ -328,7 +315,6 @@
 			children = (
 				A5CCBD1127EE1C09002B33D8 /* Model */,
 				A5CCBD1227EE1C0F002B33D8 /* View */,
-				A5CCBD1327EE1C13002B33D8 /* Presenter */,
 				A5CCBD1827EE1C4A002B33D8 /* MapAssembly.swift */,
 			);
 			path = Map;
@@ -352,14 +338,6 @@
 				A51C6A5927F9F6940021F538 /* MapViewController.xib */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		A5CCBD1327EE1C13002B33D8 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				A5CCBD1627EE1C41002B33D8 /* MapPresenter.swift */,
-			);
-			path = Presenter;
 			sourceTree = "<group>";
 		};
 		A5CCBD1A27EE1C5A002B33D8 /* Resources */ = {
@@ -542,17 +520,15 @@
 				A561FCAE27DE244800E53D83 /* MapViewController.swift in Sources */,
 				A35DFA962802F864000D9531 /* ProfileViewController.swift in Sources */,
 				A5C1A4CB27D2799A00866EB7 /* AuthViewController.swift in Sources */,
-				A301D10427F0AD10003A9397 /* UserDB.swift in Sources */,
 				A301D10127F0A8F4003A9397 /* AuthService.swift in Sources */,
 				A51C6A5D27F9F7B20021F538 /* FalseViewController.swift in Sources */,
-				A5CCBD1727EE1C41002B33D8 /* MapPresenter.swift in Sources */,
 				A59B920C280C4C6100A82DF1 /* TrueViewController.swift in Sources */,
 				A5C1A4C727D2799A00866EB7 /* AppDelegate.swift in Sources */,
 				A5CCBD1527EE1C38002B33D8 /* MapModel.swift in Sources */,
 				A540545027F2D39500352CB1 /* Camera.swift in Sources */,
+				A50EF36F2847C4F30003799A /* UserDB.swift in Sources */,
 				A5A53150280707FE002EE0EA /* PlaceModel.swift in Sources */,
 				A5C1A4D127D2799A00866EB7 /* TinkAutoParking.xcdatamodeld in Sources */,
-				A3FD2E9427EF21C4002FD5A1 /* UserPresenter.swift in Sources */,
 				A397EBD927F1AA1A002E6991 /* RegViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

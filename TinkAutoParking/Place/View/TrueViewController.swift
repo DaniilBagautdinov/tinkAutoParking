@@ -10,7 +10,7 @@ import UIKit
 class TrueViewController: UIViewController {
     
     let place: Place
-
+    
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var carLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
@@ -19,7 +19,7 @@ class TrueViewController: UIViewController {
         self.place = place
         super.init(nibName: "TrueViewController", bundle: nil)
     }
-
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

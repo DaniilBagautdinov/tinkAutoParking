@@ -14,11 +14,7 @@ protocol MapAssemblyProtocol: AnyObject {
 final class MapAssembly: MapAssemblyProtocol {
     
     func assemble() -> UIViewController {
-        let model = MapModel()
-        let presenter = MapPresenter(model: model)
-        let viewController = MapViewController(presenter: presenter)
-        
-        presenter.view = viewController
+        let viewController = MapViewController()
         
         return viewController
     }

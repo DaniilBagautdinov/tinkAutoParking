@@ -14,12 +14,12 @@ protocol ValidateEmailAndPassProtocol {
 }
 
 class RegViewController: UIViewController {
-
+    
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var firstPassTextField: UITextField!
     @IBOutlet weak var secondPassTextField: UITextField!
     @IBOutlet weak var signUpButton: UIButton!
-
+    
     let alertFactory: ValidationAlertFactory
     
     init(alertFactory: ValidationAlertFactory = AlertFactory()) {
@@ -43,12 +43,12 @@ class RegViewController: UIViewController {
         }
         AuthService.shared.signUp(email: emailTextField.text ?? "", password: firstPassTextField.text ?? "") { result in
             switch result {
-            case .success(let user):
+            case .success(_):
                 self.present(self.alertFactory.buildRegSuccessAlert(email: self.emailTextField.text ?? ""), animated: true)
                 self.emailTextField.text = ""
                 self.secondPassTextField.text = ""
                 self.firstPassTextField.text = ""
-            case .failure(let error):
+            case .failure(_):
                 self.present(self.alertFactory.buildRegUnSuccessAlert(), animated: true)
             }
         }

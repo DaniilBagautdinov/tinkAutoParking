@@ -27,7 +27,6 @@ final class MapModel: MapModelProtocol {
                         }
                     }
                 }
-                
             }
     }
     

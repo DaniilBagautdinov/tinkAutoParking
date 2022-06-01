@@ -7,19 +7,12 @@ import UIKit
 import SpriteKit
 import GameplayKit
 
-protocol MapViewControllerProtocol: AnyObject {
-    
-}
-
 class MapViewController: UIViewController {
     
-    let presenter: MapPresenterProtocol
-    
-    init(presenter: MapPresenterProtocol) {
-        self.presenter = presenter
+    init() {
         super.init(nibName: "MapViewController", bundle: nil)
     }
-
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -45,11 +38,11 @@ class MapViewController: UIViewController {
             view.showsNodeCount = true
         }
     }
-
+    
     override var shouldAutorotate: Bool {
         return true
     }
-
+    
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         if UIDevice.current.userInterfaceIdiom == .phone {
             return .allButUpsideDown
@@ -57,7 +50,7 @@ class MapViewController: UIViewController {
             return .all
         }
     }
-
+    
     override var prefersStatusBarHidden: Bool {
         return true
     }
@@ -67,10 +60,6 @@ class MapViewController: UIViewController {
         profileViewController.modalPresentationStyle = .fullScreen
         present(profileViewController, animated: true)
     }
-}
-
-extension MapViewController: MapViewControllerProtocol {
-    
 }
 
 extension MapViewController: MapSceneDelegate {

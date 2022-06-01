@@ -10,25 +10,18 @@ import GoogleSignIn
 import Firebase
 import FirebaseAuth
 
-protocol AuthViewControllerProtocol: AnyObject {
-    
-}
-
 class AuthViewController: UIViewController {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var dontHaveAccountButton: UIButton!
     
-     private var isAuth = true
-
-    let presenter: UserPresenterProtocol
+    private var isAuth = true
     
-    init(presenter: UserPresenterProtocol) {
-        self.presenter = presenter
+    init() {
         super.init(nibName: "AuthViewController", bundle: nil)
     }
-
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -57,9 +50,5 @@ class AuthViewController: UIViewController {
         regViewController.modalPresentationStyle = .fullScreen
         present(regViewController, animated: true)
     }
-    
-}
-
-extension AuthViewController: AuthViewControllerProtocol {
     
 }

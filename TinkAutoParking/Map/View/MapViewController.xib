@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -15,15 +15,14 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SKView">
-            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kEA-bp-FVZ">
-                    <rect key="frame" x="0.0" y="0.0" width="390" height="79"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kEA-bp-FVZ">
+                    <rect key="frame" x="0.0" y="0.0" width="428" height="79"/>
                     <subviews>
                         <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jaj-5u-M6E">
-                            <rect key="frame" x="0.0" y="35" width="390" height="44"/>
+                            <rect key="frame" x="0.0" y="35" width="428" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <items>
                                 <navigationItem title="Карта парковки" id="uvd-nM-ASn">
@@ -36,14 +35,22 @@
                             </items>
                         </navigationBar>
                     </subviews>
-                    <color key="backgroundColor" red="0.97254908080000002" green="0.97254908080000002" blue="0.97254908080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="backgroundColor" red="0.98306709530000003" green="0.40772557259999997" blue="0.40772557259999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="79" id="Jwu-jg-BNW"/>
+                    </constraints>
                     <variation key="heightClass=regular-widthClass=compact">
-                        <color key="backgroundColor" red="0.97254908080000002" green="0.97254908080000002" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.97967308760000005" green="0.97627657649999999" blue="0.97627657649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </variation>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="kEA-bp-FVZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="79n-GN-NOF"/>
+                <constraint firstItem="kEA-bp-FVZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="R4G-UA-7Md"/>
+                <constraint firstItem="kEA-bp-FVZ" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="YhK-tS-3dc"/>
+            </constraints>
             <point key="canvasLocation" x="138.46153846153845" y="82.464454976303315"/>
         </view>
     </objects>

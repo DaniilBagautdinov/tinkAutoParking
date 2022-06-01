@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -15,29 +15,35 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Место не занято" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdn-pW-nyM">
-                    <rect key="frame" x="141" y="104" width="132" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yPg-nx-rlu">
-                    <rect key="frame" x="150" y="218" width="115" height="31"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yPg-nx-rlu">
+                    <rect key="frame" x="125" y="224.33333333333334" width="179" height="31"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Занять место"/>
                     <connections>
                         <action selector="takePlaceButton:" destination="-1" eventType="touchUpInside" id="HCI-HR-HJU"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Место не занято" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdn-pW-nyM">
+                    <rect key="frame" x="16" y="104" width="396" height="20.333333333333329"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="139" y="83"/>
+            <constraints>
+                <constraint firstItem="hdn-pW-nyM" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="60" id="c43-pW-jM0"/>
+                <constraint firstItem="hdn-pW-nyM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="hZD-tO-xN3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="hdn-pW-nyM" secondAttribute="trailing" constant="16" id="ma6-lh-lMw"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="yPg-nx-rlu" secondAttribute="trailing" constant="124" id="nsB-xO-4TR"/>
+                <constraint firstItem="yPg-nx-rlu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="125" id="sSQ-lk-P1v"/>
+                <constraint firstItem="yPg-nx-rlu" firstAttribute="top" secondItem="hdn-pW-nyM" secondAttribute="bottom" constant="100" id="z7f-F4-lky"/>
+            </constraints>
+            <point key="canvasLocation" x="138.78504672897196" y="82.937365010799141"/>
         </view>
     </objects>
     <resources>

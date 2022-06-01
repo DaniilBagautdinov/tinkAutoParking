@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -18,40 +18,35 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QXH-k1-pKC">
-                    <rect key="frame" x="13" y="281" width="388" height="34"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eD5-TW-wpj">
+                    <rect key="frame" x="18" y="253" width="392" height="34"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eD5-TW-wpj">
-                    <rect key="frame" x="13" y="424" width="388" height="34"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Авторизация" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uOn-U2-e4m">
-                    <rect key="frame" x="13" y="116" width="388" height="48"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Авторизация" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uOn-U2-e4m">
+                    <rect key="frame" x="16" y="109" width="396" height="42"/>
                     <fontDescription key="fontDescription" type="system" pointSize="35"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ydy-LI-2aR">
-                    <rect key="frame" x="122" y="493" width="170" height="31"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ydy-LI-2aR">
+                    <rect key="frame" x="100" y="399" width="228" height="31"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Войти"/>
                     <connections>
                         <action selector="signInButton:" destination="-1" eventType="touchUpInside" id="6qF-Sf-1mu"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTu-it-LQ4">
-                    <rect key="frame" x="87" y="611" width="241" height="45"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QXH-k1-pKC">
+                    <rect key="frame" x="18" y="211" width="392" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTu-it-LQ4">
+                    <rect key="frame" x="76" y="438" width="277" height="31"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Еще не зарегистрировались?"/>
                     <connections>
@@ -61,7 +56,24 @@
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="132" y="115"/>
+            <constraints>
+                <constraint firstItem="QXH-k1-pKC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="18" id="14w-9i-yCf"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="kTu-it-LQ4" secondAttribute="trailing" constant="75" id="4mA-ex-I0P"/>
+                <constraint firstItem="eD5-TW-wpj" firstAttribute="top" secondItem="QXH-k1-pKC" secondAttribute="bottom" constant="8" id="9lB-2R-enP"/>
+                <constraint firstItem="Ydy-LI-2aR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="100" id="CuI-O7-GhL"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="eD5-TW-wpj" secondAttribute="trailing" constant="18" id="EFw-fK-Va6"/>
+                <constraint firstItem="uOn-U2-e4m" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="KbN-Nw-94g"/>
+                <constraint firstItem="QXH-k1-pKC" firstAttribute="top" secondItem="uOn-U2-e4m" secondAttribute="bottom" constant="60" id="L7D-cU-Ssg"/>
+                <constraint firstItem="eD5-TW-wpj" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="18" id="XBE-iH-B11"/>
+                <constraint firstItem="uOn-U2-e4m" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="65" id="hPj-eI-1Lm"/>
+                <constraint firstItem="kTu-it-LQ4" firstAttribute="top" secondItem="Ydy-LI-2aR" secondAttribute="bottom" constant="8" id="hxF-BS-X1T"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="QXH-k1-pKC" secondAttribute="trailing" constant="18" id="jE7-Zs-AH8"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Ydy-LI-2aR" secondAttribute="trailing" constant="100" id="l07-Sy-Mh6"/>
+                <constraint firstItem="Ydy-LI-2aR" firstAttribute="top" secondItem="eD5-TW-wpj" secondAttribute="bottom" constant="112" id="nKi-lv-yHD"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="uOn-U2-e4m" secondAttribute="trailing" constant="16" id="vyZ-pZ-22B"/>
+                <constraint firstItem="kTu-it-LQ4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="76" id="wk4-D6-lFF"/>
+            </constraints>
+            <point key="canvasLocation" x="131.77570093457942" y="114.68682505399569"/>
         </view>
     </objects>
     <resources>

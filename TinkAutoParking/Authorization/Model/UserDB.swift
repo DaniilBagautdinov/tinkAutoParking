@@ -1,17 +1,13 @@
 //
-//  User.swift
+//  UserDB.swift
 //  TinkAutoParking
 //
-//  Created by Семён Соколов on 27.03.2022.
+//  Created by Даниил Багаутдинов on 01.06.2022.
 //
 
 import Foundation
 
-protocol UserDBProtocol {
-     
-}
-
-struct UserDB: Identifiable, UserDBProtocol {
+struct UserDB: Identifiable {
     
     var id: String = UUID().uuidString
     var name: String
