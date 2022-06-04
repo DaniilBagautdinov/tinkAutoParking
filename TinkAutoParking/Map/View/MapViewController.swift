@@ -9,6 +9,8 @@ import GameplayKit
 
 class MapViewController: UIViewController {
     
+    //MARK: - Init
+    
     init() {
         super.init(nibName: "MapViewController", bundle: nil)
     }
@@ -17,9 +19,12 @@ class MapViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    var demoScene: MapScene!
+    //MARK: - Properties
     
+    var demoScene: MapScene!
     let mapModel: MapModel = MapModel()
+    
+    //MARK: - View life cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,13 +36,13 @@ class MapViewController: UIViewController {
             demoScene.delegatee = self
             // Present the scene.
             view.presentScene(demoScene)
-            
             view.ignoresSiblingOrder = true
-            
             view.showsFPS = true
             view.showsNodeCount = true
         }
     }
+    
+    //MARK: - special functions
     
     override var shouldAutorotate: Bool {
         return true
@@ -55,12 +60,16 @@ class MapViewController: UIViewController {
         return true
     }
     
+    //MARK: - Profile button
+    
     @IBAction func profileButton(_ sender: Any) {
         let profileViewController = ProfileViewController()
         profileViewController.modalPresentationStyle = .fullScreen
         present(profileViewController, animated: true)
     }
 }
+
+//MARK: - MapSceneDelegate
 
 extension MapViewController: MapSceneDelegate {
     func showScreen(id: Int) {

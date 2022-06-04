@@ -15,6 +15,8 @@ protocol MapModelProtocol {
 
 final class MapModel: MapModelProtocol {
     
+    //MARK: - Update place function
+    
     func updatePlace(sprites: [SKSpriteNode]) {
         DataBaseService.shared.placeRef
             .addSnapshotListener { querySnapshot, error in
@@ -30,6 +32,7 @@ final class MapModel: MapModelProtocol {
             }
     }
     
+    //MARK: - Get place function
     
     func getPlace(id: Int, completion: @escaping ((Place) -> (Void))) {
         var result: Place = Place(taken: false, name: "", car: "", time: "", id: "")

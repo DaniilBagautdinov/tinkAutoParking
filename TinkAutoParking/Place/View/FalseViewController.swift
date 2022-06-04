@@ -10,8 +10,12 @@ import FirebaseAuth
 
 class FalseViewController: UIViewController {
     
+    //MARK: - Properties
+    
     let id: Int
     let placeModel = PlaceModel()
+    
+    //MARK: - Init
     
     init(id: Int) {
         self.id = id
@@ -22,9 +26,14 @@ class FalseViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    
+    //MARK: - View life cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    //MARK: - Take place button
     
     @IBAction func takePlaceButton(_ sender: Any) {
         placeModel.setPlace(placeID: id)

@@ -9,11 +9,16 @@ import UIKit
 
 class TrueViewController: UIViewController {
     
+    //MARK: - Properties
+    
     let place: Place
     
+    //MARK: - UI
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var carLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
+    
+    //MARK: - init func
     
     init(place: Place) {
         self.place = place
@@ -24,10 +29,14 @@ class TrueViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    //MARK: - View life cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
     }
+    
+    //MARK: - Private configure func
     
     private func configure() {
         nameLabel.text = place.name

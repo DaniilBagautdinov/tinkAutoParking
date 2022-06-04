@@ -11,26 +11,36 @@ import FirebaseAuth
 
 class ProfileViewController: UIViewController {
     
+    //MARK: - UI
+    
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var carTextField: UITextField!
     
+    //MARK: - Properties
+    
     let profileModel = ProfileModel()
+    
+    //MARK: - View life cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
     }
     
-    @IBAction func saveButton(_ sender: Any) {
-        profileModel.updateUser(name: nameTextField.text ?? "", car: carTextField.text ?? "")
-        dismiss(animated: true)
-    }
+    //MARK: - Private configure func
     
     private func configure() {
         profileModel.getUserInfo { [self] userInfo in
             nameTextField.text = userInfo!["name"] as? String
             carTextField.text = userInfo!["car"] as? String
         }
+    }
+    
+    //MARK: - Buttons
+    
+    @IBAction func saveButton(_ sender: Any) {
+        profileModel.updateUser(name: nameTextField.text ?? "", car: carTextField.text ?? "")
+        dismiss(animated: true)
     }
     
     @IBAction func signOutButton(_ sender: Any) {

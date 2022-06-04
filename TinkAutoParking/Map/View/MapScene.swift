@@ -14,6 +14,8 @@ protocol MapSceneDelegate: AnyObject {
 
 class MapScene: SKScene, UIGestureRecognizerDelegate {
     
+    //MARK: - Properties
+    
     let layer: SKNode!
     
     let demoCamera: Camera!
@@ -104,7 +106,7 @@ class MapScene: SKScene, UIGestureRecognizerDelegate {
     
     @objc func handlePinchGesture(recognizer: UIPinchGestureRecognizer) {
         if (recognizer.state == .began) {
-            print("Initial Scale: \(initialScale)")
+            
         }
         
         if (recognizer.state == .changed) {
@@ -126,13 +128,11 @@ class MapScene: SKScene, UIGestureRecognizerDelegate {
         
         if (recognizer.state == .ended) {
             demoCamera.setCameraScaleVelocity(z: recognizer.velocity / 100)
-            print("Final Scale = \(demoCamera.xScale)")
         }
         
     }
     
-    // MARK: Gesture Recognizer Delegate
-    
+    //MARK: Gesture Recognizer Delegate
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer,
                            shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         return true;

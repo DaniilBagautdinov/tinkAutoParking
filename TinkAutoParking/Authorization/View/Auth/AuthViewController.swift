@@ -12,11 +12,17 @@ import FirebaseAuth
 
 class AuthViewController: UIViewController {
     
+    //MARK: - UI
+    
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var dontHaveAccountButton: UIButton!
     
+    //MARK: - Properties
+    
     private var isAuth = true
+    
+    //MARK: - Init
     
     init() {
         super.init(nibName: "AuthViewController", bundle: nil)
@@ -26,11 +32,14 @@ class AuthViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    //MARK: - View life cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
     
+    //MARK: - Buttons
     @IBAction func signInButton(_ sender: Any) {
         AuthService.shared.signIn(email: emailTextField.text ?? "", password: passwordTextField.text ?? "") { result in
             switch result {

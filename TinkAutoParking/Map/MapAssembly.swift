@@ -15,7 +15,6 @@ final class MapAssembly: MapAssemblyProtocol {
     
     func assemble() -> UIViewController {
         let viewController = MapViewController()
-        
         return viewController
     }
 }

@@ -15,12 +15,18 @@ protocol ValidateEmailAndPassProtocol {
 
 class RegViewController: UIViewController {
     
+    //MARK: - UI
+    
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var firstPassTextField: UITextField!
     @IBOutlet weak var secondPassTextField: UITextField!
     @IBOutlet weak var signUpButton: UIButton!
     
+    //MARK: - Properties
+    
     let alertFactory: ValidationAlertFactory
+    
+    //MARK: - Init
     
     init(alertFactory: ValidationAlertFactory = AlertFactory()) {
         self.alertFactory = alertFactory
@@ -31,9 +37,13 @@ class RegViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    //MARK: - View life cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    //MARK: - Buttons
     
     @IBAction func signUpButton(_ sender: Any) {
         guard isValidEmail(emailTextField.text) && isValidPassword(firstPassTextField.text) else { return }
@@ -60,6 +70,7 @@ class RegViewController: UIViewController {
 }
 
 //MARK: - Validate e-mail and password
+
 extension RegViewController: ValidateEmailAndPassProtocol {
     
     func isValidEmail(_ email: String?) -> Bool {
